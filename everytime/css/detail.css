@@ -1,0 +1,153 @@
+.down_display {
+  display: flex;
+  justify-content: center;
+}
+.secret_post_border {
+  width: 780px;
+
+  border-color: rgb(0, 0, 0, 0.247);
+  border-style: solid;
+  border-width: 1px;
+}
+.profile_name {
+  display: flex;
+  flex-direction: column;
+  padding-left: 10px;
+}
+#pro_img {
+  width: 50px;
+  height: "50px";
+  border-radius: 10px;
+}
+.profile_title {
+  display: flex;
+  margin-bottom: 10px;
+}
+.post_title_header {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+.post_content_title {
+  margin-bottom: 10px;
+
+  font-size: 20px;
+  font-weight: bold;
+}
+.comment_box {
+  display: flex;
+  justify-content: space-between;
+  font-size: 13px;
+  padding-left: 10px;
+
+  background-color: rgba(220, 220, 220, 0.195);
+  border-top-width: 1px;
+  border-top-style: solid;
+  border-top-color: rgb(0, 0, 0, 0.247);
+}
+
+.button_detail {
+  text-align: center;
+  padding: 10px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  border-color: rgba(220, 220, 220, 0.195);
+  font-size: 15px;
+  color: rgb(79, 79, 79);
+  border-radius: 10px;
+  background-color: rgba(220, 220, 220, 0.195);
+}
+.submit_button {
+  background-color: red;
+  border-color: red;
+}
+.comment_display {
+  display: flex;
+  justify-content: space-between;
+}
+.post_padding {
+  padding: 20px;
+}
+.list_text {
+  color: red;
+  font-size: 14px;
+  font-weight: 600;
+  padding-left: 10px;
+}
+.list_button {
+  padding: 10px;
+  background-color: white;
+  text-align: center;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  display: flex;
+  height: 40px;
+  border-radius: 3px;
+  border-width: 1px;
+  border-color: red;
+  border-style: solid;
+}
+.date_post {
+  font-size: 11px;
+  color: gray;
+  padding-top: 5px;
+  padding-right: 5px;
+}
+.letter {
+  padding-left: 10px;
+  color: gray;
+}
+.post_content {
+  margin-bottom: 10px;
+}
+#reaction {
+  margin-bottom: 10px;
+  display: flex;
+}
+#reaction > img {
+  padding-top: 5px;
+}
+#reaction > span {
+  padding-left: 2px;
+  padding-right: 10px;
+}
+.textcolor_red {
+  color: #f91f15;
+}
+.textcolor_blue {
+  color: #05bcbc;
+}
+.textcolor_yellow {
+  color: #ffc900;
+}
+.check {
+  display: flex;
+  align-items: center;
+  font-size: 13px;
+  color: gray;
+}
+#checkbox_padding {
+  padding-right: 10px;
+}
+#likelion_img {
+  display: flex;
+  flex-flow: row wrap;
+
+  margin-bottom: 20px;
+}
+#img {
+  margin: 3px;
+  flex-wrap: wrap;
+}
+
+.comment_input {
+  color: gray;
+  display: flex;
+  align-items: center;
+}
+.d {
+  color: gainsboro;
+  border: none;
+  background-color: rgba(220, 220, 220, 0.195);
+}
+/*수정
