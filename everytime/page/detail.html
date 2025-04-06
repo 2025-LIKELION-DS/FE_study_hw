@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="ko">
   <head>
-    <link rel="stylesheet" href="../css/main.css" media="screen" />
+    <link rel="stylesheet" href="../css/detail.css" media="screen" />
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>에브리타임 웹 버전 비밀 게시판 페이지</title>
@@ -29,7 +29,6 @@
         <li><a href="#">책방</a></li>
         <li><a href="#">캠퍼스픽</a></li>
       </ul>
-
       <div class="icons">
         <div class="icon-btnhugger">
           <img
@@ -144,51 +143,25 @@
     <div class="sec_asi">
       <section class="section">
         <h2 class="secret">비밀게시판</h2>
-        <div class="que_hot">
-          <div class="question_hot">
-            <img
-              src="../img/img/icn_mcr_board_question_light.png"
-              alt="질문게시판"
-              class="miniicons"
-            />
-            <div class="quebox"><a href="#">멋사 면접 때 뭐 물어봄?</a></div>
-            <div class="quebox"><a href="#">이 사건을 아는 사람</a></div>
-          </div>
-          <div class="question_hot">
-            <img
-              src="../img/img/icn_mcr_board_hotarticle_light.png"
-              alt="핫게시물"
-              class="miniicons"
-            />
-            <div class="hotbox">
-              <a href="#">
-                🦁멋사 면접 후기🦁
-                <img
-                  src="../img/img/container.articles.vote.png"
-                  alt="따봉아이콘"
-                  class="positive"
-                />
-                <p class="likes">86</p>
-              </a>
-            </div>
-          </div>
-        </div>
-        <a href="../page/post.html">
-          <div class="new_post">
-            <p class="newpforhover">새 글을 작성해주세요!</p>
-            <a href="#"
-              ><img
-                src="../img/img/container.write.background.png"
-                alt="작성 아이콘"
-                class="pen_icon"
-            /></a></div
-        ></a>
+
         <div>
-          <a href="./detail.html">
-            <div id="articles">
+          <div id="detailtext">
+            <div>
               <ul>
-                <li class="article_title">안녕하세요</li>
-                <li class="article_text">저녁 뭐 드셨나요</li>
+                <li class="profile_container">
+                  <img
+                    src="../img/img/anonymous.profile.png"
+                    alt="익명 프로필"
+                    class="anonymous_profile"
+                  />
+                  <div class="name">
+                    <span class="nickname">익명</span>
+                    <span class="timesago">방금</span>
+                  </div>
+                  <p class="contentbox_rightinforms">쪽지 신고</p>
+                </li>
+                <li class="detail_title">안녕하세요</li>
+                <li class="detail_text">저녁 뭐 드셨나요</li>
                 <li class="article_reaction">
                   <img
                     src="../img/img/container.articles.vote.png"
@@ -196,50 +169,58 @@
                     class="positive"
                   />
                   <p class="likes">1</p>
-                  | 방금 | 익명
+                  <img
+                    src="../img/img/container.articles.comment.png"
+                    alt="댓글 아이콘"
+                    class="comment"
+                  />
+                  <p class="mentions">0</p>
+                  <img
+                    src="../img/img/container.articles.scrap.png"
+                    alt="즐겨찾기 아이콘"
+                    class="favorites"
+                  />
+                  <p class="preference">0</p>
+                </li>
+                <li class="article_reaction">
+                  <p class="likesbox">
+                    <img
+                      src="../img/img/container.articles.buttons.posvote.png"
+                      alt="따봉 버튼"
+                      class="positive_gray"
+                    />공감
+                  </p>
+                  <p class="scrapbox">
+                    <img
+                      src="../img/img/container.articles.buttons.scrap.png"
+                      alt="스크랩 버튼"
+                      class="favorites_gray"
+                    />스크랩
+                  </p>
                 </li>
               </ul>
-            </div></a
-          >
-          <div id="articles">
-            <ul>
-              <li class="article_title">🦁멋사 면접 후기🦁</li>
-              <li class="article_text">이렇게 좋은 동아리일 줄은 몰 랐 어</li>
-              <li class="article_reaction">
-                <img
-                  src="../img/img/container.articles.vote.png"
-                  alt="따봉 아이콘"
-                  class="positive"
-                />
-                <p class="likes">86</p>
-                <img
-                  src="../img/img/container.articles.comment.png"
-                  alt="댓글 아이콘"
-                  class="comment"
-                />
-                <p class="mentions">3</p>
-                | 1시간 전 | lilllilil
-              </li>
-            </ul>
-          </div>
-          <div id="articles">
-            <ul>
-              <li class="article_title">교수님</li>
-              <li class="article_text">종강해주세요</li>
-              <li class="article_reaction">
-                <img
-                  src="../img/img/container.articles.comment.png"
-                  alt="댓글 아이콘"
-                  class="comment"
-                />
-                <p class="mentions">1</p>
-                | 2시간 전 | 익명
-              </li>
-            </ul>
+            </div>
           </div>
         </div>
+        <div class="typeacomment">
+          댓글을 입력하세요.
+          <input type="checkbox" class="checkbox" />
+          익명
+          <img
+            src="../img/img/container.articles.write.submit.png"
+            alt="작성 완료 버튼"
+          />
+        </div>
+        <a href="../page/main.html">
+          <div class="writingsall">
+            <img
+              src="../img/img/container.articles.pagination.list.png"
+              alt="글 목록"
+            />
+            글 목록
+          </div></a
+        >
       </section>
-
       <aside class="aside">
         <div class="boxes_first">실시간 인기 글</div>
         <div id="content_box">

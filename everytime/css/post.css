@@ -1,0 +1,150 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Noto+Serif+KR:wght@200..900&display=swap");
+
+body {
+  margin: 20px;
+  font-family: "Noto Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: normal;
+  font-style: normal;
+  font-variation-settings: "wdth" 100;
+}
+hr {
+  margin: 0px;
+  height: auto;
+  border: none;
+  border-top: 1px solid silver;
+}
+ul {
+  list-style: none;
+  padding: 0;
+}
+.positive {
+  width: 15px;
+  height: 15px;
+  padding: 2px;
+  padding-left: 5px;
+  justify-content: center;
+}
+.positive_gray {
+  width: 15px;
+  height: 15px;
+  padding-right: 5px;
+}
+.comment {
+  width: 15px;
+  height: 15px;
+  padding: 2px;
+  padding-left: 5px;
+  justify-content: center;
+}
+.likes {
+  color: red;
+  margin: 0;
+  margin-left: 3px;
+  margin-right: 3px;
+  font-weight: normal;
+}
+.mentions {
+  color: rgb(0, 228, 228);
+  margin: 0;
+  margin-left: 3px;
+  margin-right: 3px;
+  font-weight: normal;
+}
+.miniicons {
+  width: 25px;
+  height: 25px;
+  padding: 10px;
+}
+.contentbox_rightinforms {
+  font-weight: lighter;
+  font-size: smaller;
+  color: silver;
+}
+input {
+  accent-color: red;
+  margin-left: 563px;
+}
+.contentbox_rightinforms:hover {
+  cursor: pointer;
+}
+
+.writing_title {
+  font-family: "Noto Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: normal;
+  font-style: normal;
+  font-variation-settings: "wdth" 100;
+  color: gray;
+  font-size: 17px;
+  font-weight: bold;
+  width: 745px;
+  height: 25px;
+  border: 2px solid silver;
+  border-bottom: 0;
+  resize: none;
+  display: flex;
+  padding: 15px;
+  overflow: hidden;
+  outline: none;
+}
+.writingarea {
+  font-family: "Noto Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  font-variation-settings: "wdth" 100;
+  color: gray;
+  font-size: 15px;
+  font-weight: light;
+  width: 735px;
+  height: 400px;
+  border: 2px solid silver;
+  overflow: scroll;
+  overflow-x: hidden;
+  border-top: 1px solid rgb(201, 201, 201);
+  border-bottom: 1px solid rgb(201, 201, 201);
+  resize: none;
+  padding: 20px;
+  padding-bottom: 0;
+  outline: none;
+}
+.post {
+  display: flex;
+  flex-direction: column;
+}
+.submitbtn {
+  height: 40px;
+  width: 775px;
+  border: 2px solid silver;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  border-top: none;
+  color: gray;
+  font-size: smaller;
+}
+.textdetailsbtn {
+  width: 45px;
+}
+.textdetailsbtn:hover {
+  cursor: pointer;
+}
+.done {
+  background-color: red;
+  width: 43px;
+  margin-top: 5px;
+  padding-left: 5px;
+  border-bottom: 1px solid rgb(201, 201, 201);
+}
+
+input {
+  accent-color: red;
+  margin-left: 583.3px;
+}
+button {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  background-color: white;
+  margin-left: 11px;
+}
