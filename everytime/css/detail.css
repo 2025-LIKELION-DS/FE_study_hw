@@ -150,7 +150,6 @@ nav ul li a:hover {
     color: #c62917;
 }
 
-
 section{
     position:relative;
     float:left;
@@ -179,7 +178,7 @@ main{
     gap: 20px;
     justify-content:center;
 }
-/* title{
+.title-write{
     width: auto;
     background: white;
     padding: 15px;
@@ -187,177 +186,207 @@ main{
     height: auto;
     margin:0 0 5px;
     /* display: flex;
-    justify-content:space-around;} */
-
-
-.title a{
+    justify-content:space-around; */
+}
+.title-write h1{
     font-size: 24px;
     font-weight: bold;
 }
-.question1 {
+.write{
     width: 800px;
     background: white;
     /* padding: 15px 0; */
     border: 1px solid #ddd;
-    margin-bottom:5px;
-    padding:25px;
-    border:1px solid #d6d6d6;
-    box-sizing:border-box;
-    display: flex;
-    flex-direction: column;
-    align-items: left; 
-    gap: 20px;
-}
-.question1 img{
-    height:30px;
-    float:left;
-    display:block;
-    margin-left:15px;
-    
-} 
-.question1 a{
-    text-decoration: none;
-    color:#666;
-    text-align:left;
-    font-weight:bold;
-    font-size:10px;
-    padding:5px;
-} 
-.question2,
-.question3 {
-    display: flex;
-    align-items: left; 
-    gap: 10px;  
 }
 
-.question2 .item{
-    display: flex;
-    align-items: left;
-    justify-content: center;
-    padding: 10px 15px;
-    background:#EDFFFE;
-    opacity: 80%;
-    border-radius: 15px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    white-space: nowrap; 
-}
-.question3 .item {
-    display: flex;
-    align-items: left;
-    justify-content: center;
-    padding: 10px 15px;
-    background:#FFF3F3;
-    opacity: 80%;
-    border-radius: 20px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    white-space: nowrap;
+.post {
+    padding: 20px;
+    border-bottom: 1px solid #ddd;
 }
 
-.question2 .item a,
-.question3 .item a {
-    text-decoration: none;
-    color: #666;
-    font-weight: bold;
-    font-size: 12px;
-    padding: 5px 10px;
-    text-align: left;
-}
-.write {
-    margin-bottom: 5px;
-    padding: 10px 15px;
-    border: 2px solid #d6d6d6;
-    box-sizing: border-box;
-    background: #f9f9f9;
-    color: #a6a6a6;
-    
-}
-
-.write form {
+.profile {
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    margin-bottom: 10px;
 }
 
-.write input[type="text"] {
-    border: none;
-    outline: none;
-    background: #f9f9f9;
-    font-size: 14px;
-    color: #888;
-    width: 100%;
-}
-
-.write img {
+.profile-img {
     width: 40px;
-    height: auto;
-    margin-left: 10px;
+    height: 40px;
+    border-radius: 50%;
+    margin-right: 10px;
 }
 
-/* article{
-    margin-bottom:5px;
-    padding:25px;
-    border:1px solid #d6d6d6;
-    box-sizing:border-box;
-
-} */
-.article-list {
-    width: 800px;
-    background: white;
-    /* padding: 16px 24px; */
-    border: 1px solid #d6d6d6;
-    margin-bottom: 5px;
-    box-sizing: border-box;
-}
-
-.article {
-    padding: 16px 0;
-    border-bottom: 1px solid #eee;
-    box-sizing: border-box;
-    width: 100%;
-}
-
-.article:last-child {
-    border-bottom: none;
-}
-
-.article .title {
+.username {
     font-size: 16px;
     font-weight: bold;
-    color: #111;
-    margin-bottom: 6px;
-    padding: 0 24px;
 }
 
-.article .excerpt {
-    font-size: 14px;
-    color: #555;
-    margin-bottom: 10px;
-    word-break: break-word;
-    padding: 0 24px;
-}
-
-.article .meta {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 8px;
+.timestamp {
     font-size: 12px;
-    color: #888;
-    justify-content: flex-start;
-    align-items: center;
-    padding: 0 24px;
+    color: gray;
+}
+.profile-status{
+    display: flex;
+    gap: 10px;
+    justify-content: flex-end;
+    top: 0;
+    right: 0;
+    margin: 85px;    
+    position: absolute;
+}
+.messagesend{
+    font-size: 12px;
+    color: gray;
 }
 
-.article .meta .comment {
+.abuse{
+    font-size: 12px;
+    color: gray;
+}
+.post-title {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.post-content {
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+
+.post-actions {
+    display: flex;
+    gap: 10px;
+}
+
+.mini-actions{
+    display:flex;
+    gap:5px;
+    margin: 15px 0 15px 0;
+
+}
+.mini-like, .mini-write, .mini-scrap {
+    border: none;
+    display: flex;
+    justify-content:center;
+    margin: 0;
+    padding: 0;
+    font-size: 12px;
+    
+}
+.mini-actions img{    
+    /* padding: 0 5px; */
+    width: 13px;
+    height: auto;
+
+}
+
+.scrap, .like {
+    background: #f9f9f9;
+    border: none;
+    cursor: pointer;
+    min-width: 70px;
+    display: flex;
+    justify-content: center;
+    gap: 7px;
+    padding: 6px 10px;
+    border-radius: 8px;
+}
+button > div img{
+    width: 15px;
+    height: auto;
+}
+
+.comment-section {
+    /* margin-top: 20px; */
+    width: calc(100% - 45px);
     display: flex;
     align-items: center;
-    gap: 4px;
+    gap: 10px;
+    padding: 10px 5px 10px 10px;
+    background-color: #f8f8f8;
 }
 
-.article .meta .comment img {
-    width: 14px;
-    height: 14px;
-    vertical-align: middle;
+.comment-input {
+    flex-grow: 1;
+    /* padding: 10px; */
+    border: none;
+    font-size: 14px;
+    background-color: unset;
+    
 }
+form{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+
+}
+
+.submit-comment {
+    background-color: #ff4500;
+    color: white;
+    padding: 0;
+    border: none;
+    border-radius: 0;
+    cursor: pointer;
+    height: 40px;
+    width: 40px;
+}
+
+.submit-comment > div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.submit-comment > div > img {
+    width: 100%;
+    height: 100%;
+}
+
+.styled-list-button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+    border: 1px solid red;
+    margin-top: 5px;
+    margin-left: 5px;
+    padding: 0 10px 0 10px;  
+    height: 35px;
+    line-height: 35px;
+}
+
+.styled-list-button span {    
+    color: red;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 14px;
+    margin-left: 3px;
+}
+
+.styled-list-button:hover {
+    background-color: #ffe5e5;
+    cursor: pointer;
+}
+
+.styled-list-button img {
+    width: 12px;  
+    height: auto;
+    margin-left: 0; 
+}
+
+.list-icon {
+    width: 20px;
+    height: 20px;
+}
+/* aside{
+    position:relative;
+    width: 400px;
+    margin-top: 20px;
+    /* margin-right:10%;} */
+
 aside {
     position: relative;
     float: right;
