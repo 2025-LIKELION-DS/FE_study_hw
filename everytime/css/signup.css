@@ -7,7 +7,7 @@ body{
     justify-content: center;
     align-items: center;
 }
-.signup-container{
+.signup-container{ 
     /* display: flex;
     align-items: center; */
     flex-direction: column;
