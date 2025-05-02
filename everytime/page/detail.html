@@ -3,12 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Everytime_main</title>
-    <link rel="stylesheet" href="./css/main.css">
+    <title>Everytime_detail</title>
+    <link rel="stylesheet" href="/everytime/css/detail.css">
+</head>
 <body>
     <header>
         <div class="container">
-
+            <div class="hamburger">
+                <img src="/everytime/img/img/img/aside.title.hamburger.png" alt="menu">
+                <h2>비밀게시판</h2>
+            </div>
             <div class="logo">
                 <img src="/everytime/img/img/img/logo.png" alt="로고사진">
             </div>
@@ -218,76 +222,77 @@
         </div>
 
     </nav>
-
-    <main>
-    <section>
-        <div class="title">
+    <main>          
+    <section>    
+        <div class="title-write">
             <h1>
                 <a href="/">비밀게시판</a>
             </h1>
-            
-
-        </div>
-        <div class="question1">
-            <div class="question2">
-                <img src="/everytime/img/img/img/icn_mcr_board_question_light.png" alt="">
-                <div class="item">
-                    <a href="/"><span>13기 멋쟁이사자</span></a>
-                </div>
-                <div class="item">
-                    <a href="/"><span>멋사 최고</span></a>
-                </div>
-                <div class="item">
-                    <a href="/"><span>프론트엔드 개발 역량</span></a>
-                </div>
-                <div class="item">
-                    <a href="/"><span>화이팅!!</span></a>
-                </div>
-            </div>
-            <div class="question3">
-                <img src="/everytime/img/img/img/icn_mcr_board_hotarticle_light.png" alt="">
-                <div class="item">
-                    <a href="/"><span>열심히 하겠습니다.!</span></a>
-                </div>
-            </div>
         </div>
         <div class="write">
+            <div class="post">
+                <div class="profile">
+                    <img src="/everytime/img/img/img/anonymous.profile.png" alt="익명" class="profile-img">
+                    <div class="profile-info">
+                        <h3 class="username">익명</h3>
+                        <time class="timestamp">방금</time>
+                    </div>
+                </div>
+                <div class="profile-status">
+                    <div class="messagesend">쪽지</div>
+                    <div class="abuse">신고</div>
+                </div>
+                <h2 class="post-title">점심 메뉴</h2>
+                <p class="post-content">점심 뭐 먹을지 추천해주세요</p>
+                <div class="mini-actions">
+                    <div class="mini-like">
+                        <img src="/everytime/img/img/img/container.articles.vote.png" alt="">
+                    </div>
+                    <div>24</div>
+                    <div class="mini-write">
+                        <img src="/everytime/img/img/img/container.articles.comment.png" alt="">
+                    </div>
+                    <div>35</div>
+                    <div class="mini-scrap">
+                        <img src="/everytime/img/img/img/container.articles.scrap.png" alt="">
+                    </div>
+                    <div>4</div>
+                </div>
+                <div class="post-actions">                    
+                    <button class="like">
+                        <div><img src="/everytime/img/img/img/container.articles.buttons.posvote.png" alt=""></div>
+                        <div>
+                            공감
+                        </div>
+                    </button>
+                    <button class="scrap">
+                        <div><img src="/everytime/img/img/img/container.articles.buttons.scrap.png" alt=""></div>
+                        <div>
+                            스크랩
+                        </div>
+                    </button>
+                </div>
+            </div>
             <form>
-                <input type="text" name="name" placeholder="새 글을 작성해주세요!" id="text-input">
-                <img src="/everytime/img/img/img/container.write.background.png" alt="">
-                
+                <div class="comment-section">
+                    <input type="text" class="comment-input" placeholder="댓글을 입력하세요.">
+                    <input type="checkbox" id="anonymous" name="anonymous">
+                    <label for="anonymous"> 익명</label>
+                </div>
+                <button class="submit-comment">
+                    <div>
+                        <img src="/everytime/img/img/img/container.articles.write.submit.png" alt="">
+                    </div>
+                </button>
             </form>
         </div>
-        <div class="article-list">
-            <div class="article">
-                <strong class="title">토익</strong>
-                <p class="excerpt">??????...</p>
-                <div class="meta">
-                    <span class="time">방금</span>
-                    <span class="author">익명</span>
-                </div>
-            </div>
-            <div class="article">
-                <strong class="title">학잠</strong>
-                <p class="excerpt">공동 구매 하실 분 계실까요?</p>
-                <div class="meta">
-                    <span class="comment">
-                        <img src="/everytime/img/img/img/container.articles.comment.png" alt="댓글">1
-                    </span>
-                    <span class="time">2분 전</span>
-                    <span class="author">익명</span>
-                </div>
-            </div>
-            <div class="article">
-                <strong class="title">정문</strong>
-                <p class="excerpt">...</p>
-                <div class="meta">
-                    <span class="time">...</span>
-                    <span class="author">익명</span>
-                </div>
-            </div>
-        </div>
-    </section>
+            <a href="main.html" class="styled-list-button">
+                <img src="/everytime/img/img/img/container.articles.pagination.list.png" alt="목록 아이콘" class="list-icon" />
+                <span>글 목록</span>
+            </a>
+        
+    </section> 
+
 
     <aside>
         <div class="famous">
@@ -385,6 +390,7 @@
             </div>
         </div>
     </aside>
+        
     </main>
     <footer class="footer">
         <div class="footer-inner">
@@ -405,6 +411,5 @@
             </div>
         </div>
     </footer>
-
 </body>
 </html>
