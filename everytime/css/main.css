@@ -65,31 +65,26 @@
 }
 
 .nav {
-  display: flex;
-  justify-content: center;
-  gap: 0;
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 20px;
   padding: 20px;
   background-color: #f2f2f2;
   border-top: 1px solid #ccc;
   border-bottom: 1px solid #ccc;
-  color: #444444;
+  color: #444;
   font-size: 13px;
-  font-weight: lighter;
 }
 
 .nav-group {
-  width: 180px;
+  box-sizing: border-box;
   border-right: 1px solid #ccc;
   padding-right: 20px;
-  box-sizing: border-box;
 }
 
-.nav-group1 {
-  padding-right: 30px;
-}
-
-.nav-group-rightnone {
-  border-right: none;
+.nav-group:first-child {
+  border-left: 1px solid #ccc;
+  padding-left: 20px;
 }
 
 .nav-group ul {
@@ -101,16 +96,26 @@
 .nav-group li {
   margin-bottom: 6px;
   line-height: 1.4;
+  width: 100px;
 }
 
 .nav-group li a {
+  display: block;
+  width: 100%;
+  max-width: 100%;
   text-decoration: none;
   color: #222;
   font-size: 14px;
+  white-space: nowrap;
+  overflow: hidden;
+  box-sizing: border-box;
 }
 
 .secret-board {
   width: 800px;
+  box-sizing: border-box;
+  padding: 0 12px;
+  margin: 0 auto;
 }
 
 .doublesecret-box {
@@ -163,9 +168,10 @@
   box-sizing: border-box;
   border-top: 1px solid #e3e3e3;
   background-color: #fff;
-  margin: 0;
+  width: 100%;
   padding: 16px 24px;
   display: flex;
+  flex-direction: column;
   justify-content: space-between;
   text-align: center;
   word-break: break-word;
@@ -174,22 +180,30 @@
 .write-box {
   background-color: #f9f9f9;
   border: 2px solid #d6d6d6;
-  height: 50px;
-  line-height: 46px;
-  padding: 0 10px;
-  display: block;
+  width: 100%;
+  min-height: 44px;
+  line-height: 1.4;
+  padding: 12px;
+  min-height: 44px;
+  display: flex;
+  box-sizing: border-box;
   margin-bottom: 5px;
   color: #999;
-  box-sizing: border-box;
+  flex-wrap: wrap;
+  position: relative;
   cursor: text;
   font-size: 14px;
-  background-size: 40px 40px;
 }
 
 .pencil-icon {
   width: 30px;
   height: auto;
   padding-left: 10px;
+  display: flex;
+  position: absolute;
+  justify-content: flex-end;
+  right: 10px;
+  top: 9px;
 }
 
 .pencilholder {
@@ -199,7 +213,11 @@
 }
 
 .secret-text {
-  display: block;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 100%;
+  padding: 12px 16px;
   justify-content: space-between;
   align-items: flex-start;
   border: 1px solid #ddd;
@@ -214,6 +232,8 @@
   margin-bottom: 4px;
   color: #222;
   text-align: left;
+  width: 100%;
+  word-break: break-word;
 }
 
 .post-text {
@@ -223,6 +243,7 @@
   color: #444;
   font-weight: 500;
   display: flex;
+  width: 100%;
   gap: 5px;
   align-items: center;
   word-break: break-word;
@@ -385,4 +406,86 @@
   color: #a6a6a6;
   font-size: 12px;
   font-weight: lighter;
+}
+
+.reaction-set {
+  display: none;
+}
+
+@media (max-width: 640px) {
+  html,
+  body {
+    max-width: 100%;
+    overflow-x: hidden;
+  }
+  .reaction-set {
+    display: flex;
+    gap: 10px;
+    justify-content: flex-start;
+  }
+
+  .reaction-menu {
+    display: flex;
+    justify-content: flex-start;
+    height: 25px;
+    width: auto;
+    margin: 12px 0 0 12px;
+  }
+
+  .reaction-header {
+    display: block;
+    text-align: left;
+    color: black;
+    margin-top: 10px;
+  }
+
+  .header,
+  .right-article,
+  .secret-title {
+    display: none;
+  }
+
+  .everytime-text,
+  .secret-board,
+  .write-box,
+  .secret-text,
+  .post-title,
+  .post-text {
+    width: 100%;
+    padding-left: 5px;
+    padding-right: 5px;
+  }
+
+  .doublesecret-box {
+    box-sizing: border-box;
+    display: block;
+    margin: -20px 0 5px;
+    width: 100%;
+    border: none;
+    border-top: 1px solid #e3e3e3;
+    border-bottom: 1px solid #e3e3e3;
+    padding: 0;
+  }
+
+  .secret-text {
+    width: 100%;
+    flex-wrap: wrap;
+    border: none;
+    border-bottom: 1px solid #e3e3e3;
+  }
+
+  .write-box {
+    margin-left: -10px;
+  }
+  .secret-text {
+    border: none;
+    border-top: 1px solid #e3e3e3;
+    border-bottom: 1px solid #e3e3e3;
+    text-align: left;
+  }
+
+  .post-title,
+  .post-text {
+    margin-left: -5px;
+  }
 }

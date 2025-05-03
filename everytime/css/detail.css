@@ -386,6 +386,12 @@
 }
 
 @media (max-width: 640px) {
+  html,
+  body {
+    max-width: 100%;
+    overflow-x: hidden;
+  }
+
   .header,
   .right-article,
   .main-title {
