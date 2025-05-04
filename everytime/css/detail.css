@@ -39,11 +39,13 @@
   justify-content: space-between;
   font-size: 13px;
   padding-left: 10px;
-
+  border-bottom-width: 1px;
+  border-bottom-style: solid;
+  border-bottom-color: gainsboro;
   background-color: rgba(220, 220, 220, 0.195);
   border-top-width: 1px;
   border-top-style: solid;
-  border-top-color: rgb(0, 0, 0, 0.247);
+  border-top-color: gainsboro;
 }
 
 .button_detail {
@@ -128,26 +130,147 @@
 }
 #checkbox_padding {
   padding-right: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 #likelion_img {
   display: flex;
   flex-flow: row wrap;
-
   margin-bottom: 20px;
 }
 #img {
   margin: 3px;
   flex-wrap: wrap;
 }
-
+#small_img {
+  width: 30px;
+  height: 30px;
+  display: none;
+}
 .comment_input {
   color: gray;
   display: flex;
   align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+#checktext {
+  padding-bottom: 3px;
 }
 .d {
+  background-color: rgba(220, 220, 220, 0.195);
+  outline: none;
   color: gainsboro;
   border: none;
-  background-color: rgba(220, 220, 220, 0.195);
 }
-/*수정
+.background_gray {
+  background-color: rgba(220, 220, 220, 0.195);
+  margin: 0;
+
+  border-top: 1px;
+  border-top-style: solid;
+  border-top-color: gainsboro;
+  font-size: 15px;
+  display: flex;
+  flex-direction: column;
+}
+#use {
+  margin-top: 10px;
+}
+.cut > div {
+  border-right: 1px;
+  border-right-color: gainsboro;
+  border-right-style: solid;
+  padding-right: 5px;
+  display: inline-block;
+}
+#company {
+  font-size: 15px;
+  font-weight: bold;
+}
+.background_gray > div {
+  padding-left: 20px;
+}
+#additional_info {
+  padding-top: 40px;
+  color: gray;
+}
+
+@media (max-width: 640px) {
+  .header1 {
+    display: none;
+  }
+  .background_gray {
+    border: none;
+  }
+  #small_img {
+    display: block;
+    white-space: nowrap;
+    align-items: center;
+    display: flex;
+    font-size: 20px;
+    padding: 10px;
+  }
+  .header_logo {
+    display: none;
+  }
+  .inline {
+    display: none;
+  }
+  .account {
+    display: none;
+  }
+  .width2 {
+    display: none;
+  }
+  .text {
+    white-space: nowrap;
+    overflow-x: scroll;
+  }
+  .width {
+    margin-top: 0px;
+    margin-left: 0px;
+    justify-content: start;
+  }
+  .title_border {
+    display: none;
+  }
+  .secret_post_border {
+    width: 100%;
+    border: none;
+    padding: 0;
+    margin: 0;
+  }
+  .post_padding {
+    padding: 0;
+  }
+  #gray {
+    background-color: rgba(220, 220, 220, 0.195);
+    padding: 0;
+    margin: 0;
+  }
+
+  .list_button {
+    margin-left: 10px;
+  }
+  .profile_title {
+    padding: 10px;
+  }
+}
+
+#marginzero {
+  margin: 0;
+  padding: 0;
+}
+@media (min-width: 641px) {
+  .comment_box {
+    border: 1px;
+    border-color: rgb(0, 0, 0, 0.247);
+    border-style: solid;
+    border-top: none;
+  }
+  section.width {
+    padding: 0px;
+  }
+}

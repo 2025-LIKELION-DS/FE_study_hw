@@ -1,15 +1,16 @@
 <!DOCTYPE html>
 <html lang="ko">
-<!--수정-->  
-<head>
+ <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="../css/main.css" />
 
     <title>에브리타임 비밀게시판</title>
   </head>
-  <body>
+  <body id="marginzero">
     <header class="head_Add">
+      <img id="small_img" src="/everytime/img/aside.title.hamburger.png" />
+      <div id="small_img">비밀게시판</div>
       <div class="header2">
         <div>
           <img class="header_logo" src="../img/nav.logo.png" alt="에타로고" />
@@ -128,13 +129,15 @@
               src="../img/icn_mcr_board_question_light.png"
               alt="비밀게시판_글표시"
             />
+            <div id="bluetag">
             <span class="title1">학생증수령</span>
             <span class="title1">
               ㅇㅎㄱ 교수님 인공신경망기초 수업 관련 질문</span
             >
             <span class="title1">기숙사 추가입사 질문</span>
           </div>
-          <div>
+        </div>
+          <div id="fire">
             <img
               class="img_size"
               src="../img/icn_mcr_board_hotarticle_light.png"
@@ -144,7 +147,7 @@
           </div>
         </div>
         <div class="new_text">
-          <span class="new_text_padding">새 글을 작성해주세요!</span>
+          <input type="text" class="new_text_padding"placeholder="새 글을 작성해주세요!"/>
           <img
             class="new_text_img"
             src="../img/container.write.background.png"
