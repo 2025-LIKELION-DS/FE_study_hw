@@ -621,3 +621,75 @@ a:visited {
     padding:10px 10px;
     width: calc(100% - 25px);
 }
+.hamburger, header h2{
+    display: none;
+}
+
+@media(max-width:640px){
+    html, body{
+        font-size: 14px;
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        /* top: 50%;
+        left: 50%; */
+        /* width: 360px; 
+        max-width: 640px; */
+        /* overflow-x: hidden; */
+    }
+    .hamburger{ /*submenu양끝에 여백백*/
+        display: flex;
+        align-items: center;
+        width: 100%;
+        padding: 10px;
+        border-bottom: 1px solid #e3e3e3;
+    }
+    .hamburger > img{
+        width: 30px;
+        height: auto;
+    }
+    .hamburger h2{
+        font-size: 18px;
+        font-weight: normal;
+        margin-left: 10px;
+        display: flex;
+    }
+    .logo, .menu, .icon, aside{
+        display: none;
+    }
+    nav{
+        display: flex;
+        justify-content: space-between;
+        font-size: 12px;
+        border-bottom: 1px solid #e3e3e3;
+    }
+    nav .submenu{
+        width: 40%;
+        display: flex;
+        justify-content: space-between;
+        padding: 10px;      
+        padding-right: 0;
+        margin: 0;       
+    }
+    nav .group:nth-child(n+6){
+        display: none;
+    }
+    nav .divider:nth-child(n+7){
+        display: none;
+    }
+    .write{
+        width: 100%;
+        display: flex;
+        align-items: center;
+    }
+    .post{
+        padding: 15px;
+        display: flex;
+        align-items: center;
+        font-size: 14px;
+    }
+    .footer{
+        width: 100%;
+    }
+
+}
