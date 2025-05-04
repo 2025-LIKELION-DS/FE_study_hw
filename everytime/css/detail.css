@@ -281,7 +281,6 @@ hr {
 }
 
 .mainpt {
-  width: 183.5px;
   height: 183.5px;
 }
 
@@ -336,4 +335,105 @@ hr {
 
 .by {
   margin: 0px;
+}
+
+.ham {
+  display: none;
+}
+
+@media (max-width: 640px) {
+  .none {
+    display: none;
+  }
+  .header {
+    display: none;
+  }
+
+  .ham {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 10px;
+  }
+  .hambar {
+    width: 30px;
+    height: 30px;
+  }
+
+  .hamtxt {
+    margin: 0;
+    font-weight: 500;
+  }
+
+  aside {
+    display: none;
+  }
+
+  .nav {
+    width: 100%;
+    overflow-x: auto;
+    overflow-y: hidden;
+    white-space: nowrap;
+    padding: 10px 0;
+    box-sizing: border-box;
+  }
+
+  .nav1 {
+    display: inline-flex;
+    flex-direction: row;
+    gap: 24px;
+    width: max-content;
+  }
+
+  .left,
+  .right,
+  .middle1,
+  .middle2,
+  .middle3,
+  .middle4,
+  .middle5 {
+    flex-shrink: 0;
+    width: 180px;
+    display: flex;
+    flex-direction: column;
+    background-color: #e3e3e3;
+    padding: 8px;
+    border-radius: 6px;
+  }
+
+  .divider {
+    display: none;
+  }
+
+  .navtx,
+  .navtx1,
+  .navtx2,
+  .navtx3,
+  .navtx4,
+  .navtx5,
+  .navtx6 {
+    font-size: 13px;
+    white-space: nowrap;
+  }
+
+  .flex {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 10px;
+    width: 100%;
+    padding: 0 10px;
+    box-sizing: border-box;
+  }
+
+  .line,
+  .line2,
+  .rbor,
+  .sectop {
+    width: 100% !important;
+  }
+
+  .mainpt {
+    width: 100%;
+    height: auto;
+  }
 }
