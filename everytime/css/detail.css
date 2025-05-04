@@ -235,11 +235,53 @@ main{
     width: 40px;
     height: 40px;
     border-radius: 50%;
+    margin: 0 5px 5px 0;
+    align-items: center;
+}
+/* .article1{
+    margin-bottom:5px;
+    padding:25px;
+    border:1px solid #d6d6d6;
+    box-sizing:border-box;
+
+} */
+.article1{
+    padding: 15px;
+    border-bottom: 1px solid #ddd;
+}
+.article1:last-child{
+    border-bottom: none;
+}
+.article1 img {
+    width: 20px;
+    height: auto;
+    border-radius: 50%;
     margin-right: 10px;
 }
+.profile1-list{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.profile1 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+}
+.article1-content{
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+
 
 .username {
     font-size: 16px;
+    font-weight: bold;
+}
+.username1{
+    font-size: 12px;
     font-weight: bold;
 }
 
@@ -255,6 +297,18 @@ main{
 }
 
 .abuse{
+    font-size: 12px;
+    color: gray;
+}
+.answer{
+    font-size: 12px;
+    color: gray;
+}
+.emotion{
+    font-size: 12px;
+    color: gray;
+}
+.time{
     font-size: 12px;
     color: gray;
 }
@@ -320,6 +374,7 @@ button > div img{
     gap: 10px;
     padding: 10px 5px 10px 10px;
     background-color: #f8f8f8;
+    border-bottom: 1px solid #ddd;
 }
 
 .comment-input {
@@ -645,7 +700,8 @@ a:visited {
         margin: 0;
         padding: 0;
         width: 100%;
-        overflow: hidden;
+        -ms-overflow-style: none;
+        scrollbar-width: none;
     }
     .container{
         height: 50px;
@@ -712,7 +768,7 @@ a:visited {
         width: 100%;
         display: flex;
         flex-direction: column;
-        
+        /* margin-top: 0; */
     }
     
     .post{
@@ -723,23 +779,21 @@ a:visited {
         font-size: 14px;
         white-space: nowrap;
     }
-    .profile{
-        /* display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        align-items: center; */
+    .profile-list{
         display: flex;
         justify-content: space-between;  
         align-items: center;
+        width: 100%;
+    }
+    .profile{
+        display: flex;
+        justify-content: space-between;  
+        align-items: center;
+        width: 100%;
     }
     .profile-info{
         display: flex;
     }
-    /* .profile-status{
-        display: flex;
-        gap: 10px;
-        margin-left: auto;
-    } */
     .profile-status{
         display: flex;
         flex-direction: row;
@@ -747,6 +801,17 @@ a:visited {
         gap: 8px;
         margin-left: 360px;
     }
+    .profile1{
+        width: 100%;
+        display: flex;
+        justify-content: space-between;  
+        align-items: center;
+        flex-wrap: nowrap;
+        white-space: nowrap;
+    }
+    section{
+        background-color: #f9f9f9;
+    }  
     .footer{
         width: 100%;
         margin: 0;
