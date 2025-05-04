@@ -2,8 +2,13 @@ header {
   margin: 0;
   padding-top: 15px;
   padding-bottom: 15px;
-  padding-left: 2.5%;
-  padding-right: 2.5%;
+  padding-left: 150px;
+  z-index: 5;
+  position: fixed;
+  background-color: white;
+  height: 30px;
+  width: 2000px;
+  border-bottom: 1px solid silver;
 }
 body {
   margin: 0px;
@@ -17,18 +22,19 @@ hr {
 .logo-container {
   display: flex;
   align-items: center;
+  margin-right: 180px;
+  margin-left: 50px;
 }
 .header {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  margin-left: 11%;
-  margin-right: 11%;
 }
 .header_nav-links {
   display: flex;
-  padding: 0;
+  padding: 9px;
   margin: 0;
+  margin-right: 220px;
 }
 ul {
   list-style: none;
@@ -91,6 +97,7 @@ ul {
   display: flex;
   background-color: rgba(244, 244, 244, 0.999);
   justify-content: center;
+  margin-top: 50px;
 }
 .menu {
   list-style: none;
@@ -234,7 +241,6 @@ a {
   border-bottom: 1px solid silver;
 }
 .contentbox_text {
-  font-weight: lighter;
   color: gray;
 }
 .new_post {
@@ -328,13 +334,14 @@ a {
 }
 #articles {
   height: 100px;
-  width: 745px;
+  width: 600px;
   border: 1px solid silver;
   display: flex;
   padding: 10px;
   padding-left: 20px;
   align-items: center;
   border-bottom: none;
+  overflow: hidden;
 }
 #articles:hover {
   background-color: rgb(249, 249, 249);
@@ -389,7 +396,7 @@ a {
   width: auto;
 }
 .live_title {
-  font-weight: 100;
+  font-weight: 500;
   padding-bottom: 5px;
 }
 .pos_com_smaller {
@@ -399,6 +406,58 @@ a {
   padding-left: 5px;
   justify-content: center;
 }
-.newpforhover:hover {
+.new {
+  padding-right: 570px;
+}
+.new.hover {
   cursor: text;
+}
+.hamburgerbar {
+  width: 25px;
+  background-color: white;
+  padding: 0 10px;
+}
+.boardname {
+  font-size: 20px;
+  padding-left: 20px;
+}
+@media screen and (max-width: 640px) {
+  .bigscreen {
+    display: none;
+  }
+  header {
+    padding-left: 0;
+  }
+  .smallscreen {
+    display: flex;
+  }
+  .nav {
+    float: left;
+  }
+  .aside {
+    display: none;
+  }
+  .section {
+    position: absolute;
+    top: 280px;
+    left: -15px;
+  }
+  .new_post {
+    width: 617px;
+  }
+  .secret {
+    display: none;
+  }
+
+  .new {
+    padding-right: 430px;
+  }
+}
+@media screen and (min-width: 641px) {
+  .smallscreen {
+    display: none;
+  }
+  .bigscreen {
+    display: flex;
+  }
 }

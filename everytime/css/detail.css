@@ -2,8 +2,13 @@ header {
   margin: 0;
   padding-top: 15px;
   padding-bottom: 15px;
-  padding-left: 2.5%;
-  padding-right: 2.5%;
+  padding-left: 150px;
+  z-index: 5;
+  position: fixed;
+  background-color: white;
+  height: 30px;
+  width: 2000px;
+  border-bottom: 1px solid silver;
 }
 body {
   margin: 0px;
@@ -17,18 +22,19 @@ hr {
 .logo-container {
   display: flex;
   align-items: center;
+  margin-right: 180px;
+  margin-left: 50px;
 }
 .header {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  margin-left: 11%;
-  margin-right: 11%;
 }
 .header_nav-links {
   display: flex;
-  padding: 0;
+  padding: 9px;
   margin: 0;
+  margin-right: 220px;
 }
 ul {
   list-style: none;
@@ -91,6 +97,7 @@ ul {
   display: flex;
   background-color: rgba(244, 244, 244, 0.999);
   justify-content: center;
+  margin-top: 50px;
 }
 .menu {
   list-style: none;
@@ -163,10 +170,11 @@ a {
   display: flex;
   flex-direction: column;
   margin: 15px;
+  margin-right: 560px;
 }
 .sec_asi {
   display: flex;
-  justify-content: center;
+  margin-left: 193px;
 }
 .boxes {
   background-color: rgb(247, 247, 247);
@@ -229,7 +237,6 @@ a {
   border-bottom: 1px solid silver;
 }
 .contentbox_text {
-  font-weight: lighter;
   color: gray;
 }
 .positive {
@@ -278,7 +285,9 @@ a {
   color: rgb(170, 170, 170);
 }
 .aside {
-  margin-left: 15px;
+  display: flex;
+  flex-direction: column;
+  margin-left: 530px;
 }
 .place_now {
   color: red;
@@ -309,7 +318,7 @@ a {
   width: auto;
 }
 .live_title {
-  font-weight: 100;
+  font-weight: 500;
   padding-bottom: 5px;
 }
 #detailtext {
@@ -320,6 +329,7 @@ a {
   padding: 5px;
   padding-left: 17px;
   align-items: center;
+  margin-right: -500px;
 }
 .detail_title {
   padding: 3px;
@@ -374,6 +384,7 @@ a {
 }
 .likesbox {
   font-size: 13px;
+  font-weight: 400;
   color: gray;
   height: auto;
   width: auto;
@@ -390,6 +401,7 @@ a {
 .scrapbox {
   font-size: 13px;
   color: gray;
+  font-weight: 400;
   height: auto;
   width: auto;
   border-radius: 20%;
@@ -403,23 +415,26 @@ a {
 }
 .typeacomment {
   background-color: rgb(246, 246, 246);
-  height: auto;
+  height: 30px;
   width: 755px;
   border: 1px solid silver;
   display: flex;
   padding: 5px;
   padding-left: 17px;
   align-items: center;
+  flex-direction: column;
   color: gray;
   border-top: none;
   font-size: smaller;
   padding: 10px;
+  margin-left: 0;
+  outline: none;
 }
 .typeacomment img {
   background-color: red;
-  width: 40px;
+  width: 50px;
   margin: -10px;
-  margin-left: 5.1px;
+  margin-left: 6px;
   padding: 0;
 }
 .typeacomment img:hover {
@@ -427,7 +442,6 @@ a {
 }
 input {
   accent-color: red;
-  margin-left: 563px;
 }
 .writingsall {
   height: 15px;
@@ -456,4 +470,105 @@ input {
   padding: 2px;
   padding-left: 5px;
   justify-content: center;
+}
+.hamburgerbar {
+  width: 25px;
+  background-color: white;
+  padding: 0 10px;
+}
+.boardname {
+  font-size: 20px;
+  padding-left: 20px;
+}
+
+.ick {
+  display: flex;
+  position: absolute;
+  margin-top: -35px;
+  font-size: 12px;
+  color: gray;
+  margin-left: 670px;
+}
+.submit {
+  background-color: red;
+  width: 50px;
+  height: 51px;
+  border: none;
+  padding: 0;
+  position: absolute;
+  margin-left: 726px;
+  margin-top: -51.5px;
+}
+
+@media screen and (max-width: 640px) {
+  body {
+    overflow-x: hidden;
+  }
+  header {
+    padding-left: 0;
+  }
+  .bigscreen {
+    display: none;
+  }
+  .smallscreen {
+    display: flex;
+  }
+  .nav {
+    float: left;
+  }
+  .aside {
+    display: none;
+  }
+  .section {
+    position: absolute;
+    top: 280px;
+    left: 0;
+    margin-left: 0;
+  }
+  .new_post {
+    width: 610px;
+  }
+  .secret {
+    display: none;
+  }
+  .contentbox_rightinforms {
+    margin-left: -140px;
+  }
+  .typeacomment {
+    margin-left: 0;
+    width: 640px;
+    border-right: none;
+    height: 20px;
+    position: relative;
+  }
+  .submit {
+    background-color: red;
+    width: 41px;
+    height: 41px;
+    border: none;
+    padding: 0;
+    position: absolute;
+    margin-left: 598px;
+    margin-top: -41px;
+  }
+  .sides {
+    background-color: rgb(246, 246, 246);
+    width: 2px;
+    height: 30px;
+  }
+  .ick {
+    margin-top: -30px;
+    margin-left: 540px;
+  }
+}
+@media screen and (min-width: 641px) {
+  .smallscreen {
+    display: none;
+  }
+  .bigscreen {
+    display: flex;
+  }
+  .aside {
+    margin-left: -530px;
+  }
 }

@@ -1,0 +1,95 @@
+.logo {
+  width: 250px;
+  display: flex;
+  margin-bottom: 30px;
+  margin-top: 40px;
+}
+.hugger {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin: -350px 0 0 -300px;
+  width: 600px;
+  height: 700px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+#id {
+  background-color: whitesmoke;
+  border: none;
+  width: 700px;
+  height: 40px;
+  display: flex;
+  border-radius: 10px;
+  margin: 5px;
+  padding-left: 10px;
+  outline: none;
+}
+#pw {
+  background-color: whitesmoke;
+  border: none;
+  width: 700px;
+  height: 40px;
+  display: flex;
+  border-radius: 10px;
+  margin: 5px;
+  padding-left: 10px;
+  outline: none;
+}
+#submitbtn {
+  color: white;
+  background-color: grey;
+  border: none;
+  width: 705px;
+  height: 40px;
+  display: flex;
+  border-radius: 10px;
+  margin: 8px;
+  justify-content: center;
+  align-items: center;
+  font-size: 17px;
+  outline: none;
+}
+
+.signuplink {
+  color: rgb(89, 89, 89);
+  margin-top: 130px;
+  margin-bottom: 180px;
+  display: flex;
+  justify-content: center;
+}
+
+ul {
+  bottom: 0;
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  padding: 0;
+  color: rgb(89, 89, 89);
+}
+ul li {
+  margin: 0 30px;
+}
+ul li:nth-child(2n) {
+  font-weight: bolder;
+}
+@media screen and (max-width: 640px) {
+  #submitbtn {
+    width: 500px;
+  }
+
+  #id {
+    width: 500px;
+  }
+  #pw {
+    width: 500px;
+  }
+  .signuplink {
+    font-size: 12px;
+  }
+  .ul {
+    font-size: 11px;
+  }
+}

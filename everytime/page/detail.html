@@ -8,42 +8,52 @@
   </head>
   <body>
     <header class="header">
-      <div class="logo-container">
-        <a href="./main.html"
-          ><img
-            src="../img/img/nav.logo.png"
-            alt="에브리타임 로고"
-            class="logo"
-        /></a>
-        <div class="name">
-          <span class="sub-text">에브리타임</span>
-          <span class="main-text">덕성여대</span>
+      <div class="bigscreen">
+        <div class="logo-container">
+          <a href="./main.html"
+            ><img
+              src="../img/img/nav.logo.png"
+              alt="에브리타임 로고"
+              class="logo"
+          /></a>
+          <div class="name">
+            <span class="sub-text">에브리타임</span>
+            <span class="main-text">덕성여대</span>
+          </div>
+        </div>
+        <ul class="header_nav-links">
+          <li><a href="#" class="place_now">게시판</a></li>
+          <li><a href="#">시간표</a></li>
+          <li><a href="#">강의실</a></li>
+          <li><a href="#">학점계산기</a></li>
+          <li><a href="#">친구</a></li>
+          <li><a href="#">책방</a></li>
+          <li><a href="#">캠퍼스픽</a></li>
+        </ul>
+        <div class="icons">
+          <div class="icon-btnhugger">
+            <img
+              src="../img/img/icon_communication_chat_filled_gray500_light.svg"
+              alt="채팅"
+              class="icon-btn"
+            />
+          </div>
+          <div class="icon-btnhugger">
+            <img
+              src="../img/img/icon_account_user_filled_gray500_light.svg"
+              alt="프로필"
+              class="icon-btn"
+            />
+          </div>
         </div>
       </div>
-      <ul class="header_nav-links">
-        <li><a href="#" class="place_now">게시판</a></li>
-        <li><a href="#">시간표</a></li>
-        <li><a href="#">강의실</a></li>
-        <li><a href="#">학점계산기</a></li>
-        <li><a href="#">친구</a></li>
-        <li><a href="#">책방</a></li>
-        <li><a href="#">캠퍼스픽</a></li>
-      </ul>
-      <div class="icons">
-        <div class="icon-btnhugger">
-          <img
-            src="../img/img/icon_communication_chat_filled_gray500_light.svg"
-            alt="채팅"
-            class="icon-btn"
-          />
-        </div>
-        <div class="icon-btnhugger">
-          <img
-            src="../img/img/icon_account_user_filled_gray500_light.svg"
-            alt="프로필"
-            class="icon-btn"
-          />
-        </div>
+      <div class="smallscreen">
+        <img
+          src="../img/img/aside.title.hamburger.png"
+          alt="햄버거바"
+          class="hamburgerbar"
+        />
+        <span class="boardname">비밀게시판</span>
       </div>
     </header>
     <hr />
@@ -142,75 +152,80 @@
 
     <div class="sec_asi">
       <section class="section">
+        <div>
         <h2 class="secret">비밀게시판</h2>
 
-        <div>
-          <div id="detailtext">
-            <div>
-              <ul>
-                <li class="profile_container">
+        <div id="detailtext">
+          <div>
+            <ul>
+              <li class="profile_container">
+                <img
+                  src="../img/img/anonymous.profile.png"
+                  alt="익명 프로필"
+                  class="anonymous_profile"
+                />
+                <div class="name">
+                  <span class="nickname">익명</span>
+                  <span class="timesago">방금</span>
+                </div>
+                <p class="contentbox_rightinforms">쪽지 신고</p>
+              </li>
+              <li class="detail_title">안녕하세요</li>
+              <li class="detail_text">저녁 뭐 드셨나요</li>
+              <li class="article_reaction">
+                <img
+                  src="../img/img/container.articles.vote.png"
+                  alt="따봉 아이콘"
+                  class="positive"
+                />
+                <p class="likes">1</p>
+                <img
+                  src="../img/img/container.articles.comment.png"
+                  alt="댓글 아이콘"
+                  class="comment"
+                />
+                <p class="mentions">0</p>
+                <img
+                  src="../img/img/container.articles.scrap.png"
+                  alt="즐겨찾기 아이콘"
+                  class="favorites"
+                />
+                <p class="preference">0</p>
+              </li>
+              <li class="article_reaction">
+                <p class="likesbox">
                   <img
-                    src="../img/img/anonymous.profile.png"
-                    alt="익명 프로필"
-                    class="anonymous_profile"
-                  />
-                  <div class="name">
-                    <span class="nickname">익명</span>
-                    <span class="timesago">방금</span>
-                  </div>
-                  <p class="contentbox_rightinforms">쪽지 신고</p>
-                </li>
-                <li class="detail_title">안녕하세요</li>
-                <li class="detail_text">저녁 뭐 드셨나요</li>
-                <li class="article_reaction">
+                    src="../img/img/container.articles.buttons.posvote.png"
+                    alt="따봉 버튼"
+                    class="positive_gray"
+                  />공감
+                </p>
+                <p class="scrapbox">
                   <img
-                    src="../img/img/container.articles.vote.png"
-                    alt="따봉 아이콘"
-                    class="positive"
-                  />
-                  <p class="likes">1</p>
-                  <img
-                    src="../img/img/container.articles.comment.png"
-                    alt="댓글 아이콘"
-                    class="comment"
-                  />
-                  <p class="mentions">0</p>
-                  <img
-                    src="../img/img/container.articles.scrap.png"
-                    alt="즐겨찾기 아이콘"
-                    class="favorites"
-                  />
-                  <p class="preference">0</p>
-                </li>
-                <li class="article_reaction">
-                  <p class="likesbox">
-                    <img
-                      src="../img/img/container.articles.buttons.posvote.png"
-                      alt="따봉 버튼"
-                      class="positive_gray"
-                    />공감
-                  </p>
-                  <p class="scrapbox">
-                    <img
-                      src="../img/img/container.articles.buttons.scrap.png"
-                      alt="스크랩 버튼"
-                      class="favorites_gray"
-                    />스크랩
-                  </p>
-                </li>
-              </ul>
-            </div>
+                    src="../img/img/container.articles.buttons.scrap.png"
+                    alt="스크랩 버튼"
+                    class="favorites_gray"
+                  />스크랩
+                </p>
+              </li>
+            </ul>
           </div>
         </div>
-        <div class="typeacomment">
-          댓글을 입력하세요.
-          <input type="checkbox" class="checkbox" />
-          익명
+        <form name="comments" method="post">
+          <input
+            type="text"
+            class="typeacomment"
+            placeholder="댓글을 입력하세요."
+          />
+          <label class="ick"
+            ><input type="checkbox"  /> 익명</label
+          >
           <img
             src="../img/img/container.articles.write.submit.png"
             alt="작성 완료 버튼"
+            class="submit"
           />
-        </div>
+        </form>
         <a href="../page/main.html">
           <div class="writingsall">
             <img

@@ -1,0 +1,132 @@
+.hugger {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin: -350px 0 0 -300px;
+  width: 600px;
+  height: 700px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+#id {
+  background-color: whitesmoke;
+  border: none;
+  width: 700px;
+  height: 40px;
+  display: flex;
+  border-radius: 10px;
+  margin: 5px;
+  margin-bottom: 10px;
+  padding-left: 10px;
+  outline: none;
+}
+#pw {
+  background-color: whitesmoke;
+  border: none;
+  width: 700px;
+  height: 40px;
+  display: flex;
+  border-radius: 10px;
+  margin: 5px;
+  margin-bottom: 10px;
+  padding-left: 10px;
+  outline: none;
+}
+
+#repw {
+  background-color: whitesmoke;
+  border: none;
+  width: 700px;
+  height: 40px;
+  display: flex;
+  border-radius: 10px;
+  margin: 5px;
+  margin-bottom: 10px;
+  padding-left: 10px;
+  outline: none;
+}
+#email {
+  background-color: whitesmoke;
+  border: none;
+  width: 700px;
+  height: 40px;
+  display: flex;
+  border-radius: 10px;
+  margin: 5px;
+  margin-bottom: 10px;
+  padding-left: 10px;
+  outline: none;
+}
+#nickname {
+  background-color: whitesmoke;
+  border: none;
+  width: 700px;
+  height: 40px;
+  display: flex;
+  border-radius: 10px;
+  margin: 5px;
+  margin-bottom: 10px;
+  padding-left: 10px;
+  outline: none;
+}
+#submitbtn {
+  color: white;
+  background-color: grey;
+  border: none;
+  width: 707px;
+  height: 40px;
+  display: flex;
+  border-radius: 10px;
+  margin: 8px;
+  justify-content: center;
+  align-items: center;
+  font-size: 17px;
+  outline: none;
+  margin-top: 40px;
+}
+.title {
+  font-weight: 770;
+  font-size: 32px;
+  margin-top: 0;
+}
+.description {
+  color: rgb(95, 95, 95);
+  margin-bottom: 30px;
+}
+.description p {
+  margin: 0;
+}
+.suptext {
+  font-size: 13px;
+  color: rgb(95, 95, 95);
+}
+
+@media screen and (max-width: 640px) {
+  #submitbtn {
+    width: 500px;
+  }
+
+  #id {
+    width: 500px;
+  }
+  #pw {
+    width: 500px;
+  }
+  #repw {
+    width: 500px;
+  }
+  #nickname {
+    width: 500px;
+  }
+  #email {
+    width: 500px;
+  }
+  .signuplink {
+    font-size: 12px;
+  }
+  .ul {
+    font-size: 11px;
+  }
+}
