@@ -28,42 +28,41 @@ header > .container{
     /* height:50px; */
     margin:auto;
     margin-bottom: 0;
-    display:center;
-    
+    display:flex;
+    justify-content:space-evenly;
+    align-items: center;
 }
 
 .container > .logo img{
-    margin-top: 10px;
     margin-bottom: 0;
     height:auto;
-    width:150px;
-    float:left;
-    margin-left:10%;
+    width:170px;
 }
 
 .container > .menu{
-    height:60px;
+    height:80px;
     width:500px;
-    float:left;
-    margin-left:170px;
-    display:center;
-    
+    /* margin-left:170px; */
+    display:flex;
+    flex-direction: row;
+
 
 }
 
 .container > .menu ul {
-	margin-top: 30px;
+	/* margin-top: 30px;
     margin-right:auto;
     margin-left:auto;
-    display: block;
+    display: block; */
     list-style-type: none;
-
+    display:flex;
+    flex-direction: row;
+    margin-top:28px;
 }
 
 .container > .menu li{
     margin-right:auto;
     margin-left:auto;
-	float:left;
 	margin-left: 15px;
 
 }
@@ -85,35 +84,33 @@ header > .container{
 .container > .icon{
     height:50px;
     width:100px;
-    float:right;
     margin-right:5%;
     margin-top:28px;
+    display:flex;
+    flex-direction: row-reverse;
 }
 .container > .icon img{
     height:30px;
-    float:right;
     display:block;
     margin-right:15px;
 }
 nav {
     width: 1512px;
+    height: 230px;
     background-color:#f5f5f5;
-    padding:10px 0;
     display:flex;
     justify-content:center;
-    position: relative; /* 추가: 서브메뉴가 정상적으로 보이도록 */
+    position: relative;
+    border-top: 1px solid #e3e3e3;
+    border-bottom: 1px solid #e3e3e3;
 }
 
 .submenu {
     display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    /* border-top:1px solid  #e3e3e3; */
-    margin-top:0;
+    justify-content:center;
     background-color: #f5f5f5;
-    padding:10px 0;
+    padding:15px;
     width: 100%; 
-    padding: 10px 0; 
     box-sizing: border-box;
 }
 
@@ -131,19 +128,25 @@ nav ul {
 
 nav ul li {
     text-align: center;
+    text-align: left;
 }
+
 
 nav ul li a {
     text-decoration: none;
     color:#f5f5f5;
     display: block;
-    padding: 8px 8px;
+    padding: 4px;
     background: #f5f5f5;
     border-radius: 5px;
     max-width: 130px;
+    width: 122px;
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
+}
+nav ul li a:first-child {
+    padding-top: 3px;
 }
 
 nav ul li a:hover {
@@ -241,6 +244,13 @@ main{
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     white-space: nowrap; 
 }
+.question3{
+    width: 100%;
+    display: flex;
+    justify-content:left;
+    text-align: left;
+}
+
 .question3 .item {
     display: flex;
     align-items: left;
@@ -252,6 +262,21 @@ main{
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     white-space: nowrap;
 }
+.item-vote{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 11px;
+    color: #c62917;
+
+}
+.item-vote img{
+    height: 11px;
+    width: 11px;
+    margin-left: 0;
+    padding-right: 2px;
+
+}
 
 .question2 .item a,
 .question3 .item a {
@@ -261,7 +286,9 @@ main{
     font-size: 12px;
     padding: 5px 10px;
     text-align: left;
+    overflow: auto;
 }
+
 .write {
     margin-bottom: 5px;
     padding: 10px 15px;
@@ -592,3 +619,172 @@ a:visited {
     padding:10px 10px;
     width: calc(100% - 25px);
 }
+.hamburger, header h2{
+    display: none;
+}
+@media(max-width:640px){
+    html, body{
+        font-size: 14px;
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        /* overflow: hidden; */
+        -ms-overflow-style: none;
+        scrollbar-width: none;
+    }
+    ::-webkit-scrollbar {
+        display: none;
+    }
+    ::-webkit-scrollbar-track {
+        display: none;
+    }
+    ::-webkit-scrollbar-button{
+        display: none !important;
+    }
+    ::-webkit-scrollbar-thumb {
+        display: none;
+    }
+    .container{
+        height: 50px;
+    }
+    .hamburger{
+        display: flex;
+        align-items: center;
+        width: 100%;
+        padding: 10px 10px 10px 15px
+        /* border-bottom: 1px solid #e3e3e3; */
+    }
+    .hamburger > img{
+        width: 25px;
+        height: auto;
+    }
+    .hamburger h2{
+        font-size: 18px;
+        font-weight: normal;
+        margin-left: 15px;
+        display: flex;
+    }
+    .logo, .menu, .icon, .title-write, aside, .title{
+        display: none !important;
+    }
+    nav{
+        display: flex;
+        height: 199.2px;
+        width: 100%;
+        justify-content: space-between;
+        font-size: 12px;
+        border-bottom: 1px solid #e3e3e3;
+    }
+
+    nav .submenu{
+        width: 100%;
+        display: flex;
+        text-align: left;
+        padding: 5px;      
+        justify-content: left;
+    }
+    nav .submenu a{
+        width: 112px;
+        text-align: left;
+        flex: 0 0 auto;
+    }
+    nav .submenu .divider{
+        flex: 0 0 auto;
+        width: 1px;
+        margin: 0px 10px 0px 0px;
+        background-color: #e3e3e3;
+    }
+    nav .group:nth-child(n+8){
+        display: none;
+    }
+    nav .divider:nth-child(n+9){
+        display: none;
+    }
+    main{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+    .question1{
+        width: 100%;
+    }
+    .question2{
+        /* width: 100%; */
+        overflow: scroll;
+        -ms-overflow-style: none;
+    }
+    .question3{
+        /* width: 100%; */
+        overflow: scroll;
+        -ms-overflow-style: none;
+        width: 100%;
+        display: flex;
+        justify-content:left;
+        text-align: left;
+    }
+    .item{
+        width: 100%;
+        display: flex;
+        justify-content:left;
+        text-align: left;
+        padding: 12px;
+    }
+    .item a{
+        text-align: left;
+    }
+    .item a span{
+        text-align: left;
+    }
+    .item img{
+        width: 11px;
+        height: auto;
+        margin-left: 0;
+        padding-right: 2px;
+
+    }
+    .item-vote{
+        display: flex;
+        justify-content: center;
+        font-size: 11px;
+        color: #c62917;
+        align-items: center;
+    }
+    .write{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        
+    }
+    section{
+        width: 100%;
+    }
+    .article-list{
+        width: 100%;
+    }
+    .article{
+        width: 100%;
+    }
+    .title{
+        width: 100%;
+    }
+    
+    .excerpt{
+        width: 100%;
+    }
+    .meta{
+        width: 100%;
+    }
+    .footer{
+        width: 100%;
+        margin: 0;
+        padding: 0;
+    }
+    .footer-inner{
+        width: 90%;
+        margin: 0;
+        padding: 40px 32px 60px;
+        
+    
+    }
+    }
+

@@ -28,42 +28,41 @@ header > .container{
     /* height:50px; */
     margin:auto;
     margin-bottom: 0;
-    display:center;
-    
+    display:flex;
+    justify-content:space-evenly;
+    align-items: center;
 }
 
 .container > .logo img{
-    margin-top: 10px;
     margin-bottom: 0;
     height:auto;
-    width:150px;
-    float:left;
-    margin-left:10%;
+    width:170px;
 }
 
 .container > .menu{
-    height:60px;
+    height:80px;
     width:500px;
-    float:left;
-    margin-left:170px;
-    display:center;
-    
+    /* margin-left:170px; */
+    display:flex;
+    flex-direction: row;
+
 
 }
 
 .container > .menu ul {
-	margin-top: 30px;
+	/* margin-top: 30px;
     margin-right:auto;
     margin-left:auto;
-    display: block;
+    display: block; */
     list-style-type: none;
-
+    display:flex;
+    flex-direction: row;
+    margin-top:28px;
 }
 
 .container > .menu li{
     margin-right:auto;
     margin-left:auto;
-	float:left;
 	margin-left: 15px;
 
 }
@@ -85,35 +84,33 @@ header > .container{
 .container > .icon{
     height:50px;
     width:100px;
-    float:right;
     margin-right:5%;
     margin-top:28px;
+    display:flex;
+    flex-direction: row-reverse;
 }
 .container > .icon img{
     height:30px;
-    float:right;
     display:block;
     margin-right:15px;
 }
 nav {
     width: 1512px;
+    height: 230px;
     background-color:#f5f5f5;
-    padding:10px 0;
     display:flex;
     justify-content:center;
-    position: relative; /* 추가: 서브메뉴가 정상적으로 보이도록 */
+    position: relative;
+    border-top: 1px solid #e3e3e3;
+    border-bottom: 1px solid #e3e3e3;
 }
 
 .submenu {
     display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    /* border-top:1px solid  #e3e3e3; */
-    margin-top:0;
+    justify-content:center;
     background-color: #f5f5f5;
-    padding:10px 0;
+    padding:15px;
     width: 100%; 
-    padding: 10px 0; 
     box-sizing: border-box;
 }
 
@@ -131,19 +128,25 @@ nav ul {
 
 nav ul li {
     text-align: center;
+    text-align: left;
 }
+
 
 nav ul li a {
     text-decoration: none;
     color:#f5f5f5;
     display: block;
-    padding: 8px 8px;
+    padding: 4px;
     background: #f5f5f5;
     border-radius: 5px;
     max-width: 130px;
+    width: 122px;
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
+}
+nav ul li a:first-child {
+    padding-top: 3px;
 }
 
 nav ul li a:hover {
@@ -151,8 +154,7 @@ nav ul li a:hover {
 }
 
 section{
-    position:relative;
-    float:left;
+    /* @ */
     /* width:780px; */
     margin-top: 20px;
     /* margin-left:5%;*/
@@ -200,14 +202,33 @@ main{
 }
 
 .post {
-    padding: 20px;
+    padding: 15px;
     border-bottom: 1px solid #ddd;
+}
+
+.profile-list{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 .profile {
     display: flex;
+    flex-direction: row;
+    justify-content: space-between;
     align-items: center;
-    margin-bottom: 10px;
+    margin-bottom: 15px;
+}
+.profile-info{
+    display: flex;
+    flex-direction: column;
+    margin-right: auto;
+}
+.profile-status{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    gap: 8px;
 }
 
 .profile-img {
@@ -226,15 +247,8 @@ main{
     font-size: 12px;
     color: gray;
 }
-.profile-status{
-    display: flex;
-    gap: 10px;
-    justify-content: flex-end;
-    top: 0;
-    right: 0;
-    margin: 85px;    
-    position: absolute;
-}
+
+
 .messagesend{
     font-size: 12px;
     color: gray;
@@ -631,65 +645,119 @@ a:visited {
         margin: 0;
         padding: 0;
         width: 100%;
-        /* top: 50%;
-        left: 50%; */
-        /* width: 360px; 
-        max-width: 640px; */
-        /* overflow-x: hidden; */
+        overflow: hidden;
     }
-    .hamburger{ /*submenu양끝에 여백백*/
+    .container{
+        height: 50px;
+    }
+    .hamburger{
         display: flex;
         align-items: center;
         width: 100%;
-        padding: 10px;
-        border-bottom: 1px solid #e3e3e3;
+        padding: 10px 10px 10px 15px
+        /* border-bottom: 1px solid #e3e3e3; */
     }
     .hamburger > img{
-        width: 30px;
+        width: 25px;
         height: auto;
     }
     .hamburger h2{
         font-size: 18px;
         font-weight: normal;
-        margin-left: 10px;
+        margin-left: 15px;
         display: flex;
     }
-    .logo, .menu, .icon, aside{
-        display: none;
+    .logo, .menu, .icon, .title-write, aside{
+        display: none !important;
     }
     nav{
         display: flex;
+        height: 199.2px;
+        width: 100%;
         justify-content: space-between;
         font-size: 12px;
         border-bottom: 1px solid #e3e3e3;
     }
+
     nav .submenu{
-        width: 40%;
+        width: 100%;
         display: flex;
-        justify-content: space-between;
-        padding: 10px;      
-        padding-right: 0;
-        margin: 0;       
+        text-align: left;
+        padding: 5px;      
+        justify-content: left;
     }
-    nav .group:nth-child(n+6){
+    nav .submenu a{
+        width: 112px;
+        text-align: left;
+        flex: 0 0 auto;
+    }
+    nav .submenu .divider{
+        flex: 0 0 auto;
+        width: 1px;
+        margin: 0px 10px 0px 0px;
+        background-color: #e3e3e3;
+    }
+    nav .group:nth-child(n+8){
         display: none;
     }
-    nav .divider:nth-child(n+7){
+    nav .divider:nth-child(n+9){
         display: none;
+    }
+    main{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
     }
     .write{
         width: 100%;
         display: flex;
-        align-items: center;
+        flex-direction: column;
+        
     }
+    
     .post{
         padding: 15px;
         display: flex;
-        align-items: center;
+        flex-direction: column;
+        align-items:flex-start;
         font-size: 14px;
+        white-space: nowrap;
+    }
+    .profile{
+        /* display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center; */
+        display: flex;
+        justify-content: space-between;  
+        align-items: center;
+    }
+    .profile-info{
+        display: flex;
+    }
+    /* .profile-status{
+        display: flex;
+        gap: 10px;
+        margin-left: auto;
+    } */
+    .profile-status{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        gap: 8px;
+        margin-left: 360px;
     }
     .footer{
         width: 100%;
+        margin: 0;
+        padding: 0;
+    }
+    .footer-inner{
+        width: 90%;
+        margin: 0;
+        padding: 40px 32px 60px;
+        
+    
     }
 
 }
