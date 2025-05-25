@@ -5,7 +5,6 @@
 
 .write {
   width: 780px;
-  height: 479px;
   margin: 0px 0px 5px;
   border: 2px solid #d6d6d6;
 }
@@ -19,19 +18,20 @@
   font-family: "Apple SD Gothic Neo", "맑은 고딕", "돋움", sans-serif;
 }
 
-p {
+#mainTxt {
   width: 776px;
   width: auto;
   padding: 15px;
+  margin: 0px;
 }
 
-.box {
+.penBox {
   display: flex;
   justify-content: end;
   border: 1px solid #ff0404;
   width: auto;
-  width: 35px;
-  height: 35px;
+  width: 44px;
+  height: 44px;
   background-color: #ff0000;
 }
 
@@ -50,6 +50,7 @@ p {
   width: 100%;
   display: flex;
   justify-content: space-between;
+  border-top: 1px solid #d6d6d6;
 }
 
 .정렬2 {
@@ -58,7 +59,26 @@ p {
 
 .qna {
   margin: 0px;
-  padding: 8px;
+  padding: 8px 8px 0px 8px;
   font-size: 14px;
   color: #8b8b8b;
+}
+
+#guideMessage {
+  display: none;
+  background-color: #edfffe;
+  padding: 10px;
+  color: #05bcbc;
+  border-radius: 5px;
+  font-size: 0.9em;
+  width: 90%;
+  border-radius: 8px;
+  margin: 0 auto;
+  font-size: 12px;
+}
+
+#postGuide {
+  padding: 8px 0;
+  border-top: 1px solid #d6d6d6;
+  display: none; /*안 보이게 설정*/
 }

@@ -33,8 +33,6 @@
 
 .nav {
   padding: 15px;
-
-  height: 245.2px;
   background-color: #e3e3e3;
   border: 0px;
   border-bottom: 1px solid #a6a6a6;
@@ -128,6 +126,7 @@ hr {
   margin: 0;
   font-size: 13.8px;
   color: #444;
+  white-space: nowrap;
 }
 
 .red {
@@ -209,8 +208,8 @@ hr {
   justify-content: end;
   border: 1px solid #ff0404;
   width: auto;
-  width: 40px;
-  height: 40px;
+  width: 43.5px;
+  height: 43.5px;
   background-color: #ff0000;
 }
 
@@ -289,6 +288,19 @@ hr {
   width: 15px;
 }
 
+#goodLike {
+  margin: 0px 4px 0px 5px;
+  width: 15px;
+}
+#comment {
+  margin: 0px 4px 0px 5px;
+  width: 15px;
+}
+#star {
+  margin: 0px 4px 0px 5px;
+  width: 15px;
+}
+
 .익명 {
   width: 22px;
   height: 22px;
@@ -301,6 +313,7 @@ hr {
   margin-top: 0px;
   margin-left: 10px;
   font-weight: bold;
+  width: 30px;
   color: #a9a9a9;
 }
 
@@ -320,17 +333,114 @@ hr {
   justify-content: space-between;
 }
 
+#reline정렬 {
+  display: flex;
+  justify-content: space-between;
+}
+
+/*대댓글*/
+#recomment {
+  background-color: #f7f6f6;
+  width: 90%;
+  margin-top: 8px;
+  border: 1px solid #cfcfcf;
+  padding: 15px;
+  /*display: none;*/
+}
+
+#recotext {
+  background-color: #f7f6f6;
+  border: none;
+  font-size: 14px;
+  font-weight: 450;
+  color: #949494;
+  margin-left: 10px;
+}
+
+#recomment정렬 {
+  display: flex;
+  justify-content: space-between;
+}
+
 .line2 {
   border: 1px solid #cfcfcf;
   width: 790px;
   padding: 0px;
   background-color: #f7f6f6;
+  margin-bottom: 15px;
 }
 
 .ret {
   font-size: 14px;
   font-weight: 450;
   color: #949494;
+}
+
+#reRet {
+  font-size: 14px;
+  font-weight: 450;
+  color: #949494;
+}
+
+#reCo {
+  font-size: 12px;
+  margin-left: 8px;
+  color: #a6a6a6;
+  width: 80%;
+  text-align: right;
+}
+
+.reCoco {
+  font-size: 12px;
+  margin-left: 8px;
+  color: #a6a6a6;
+  width: 80%;
+  text-align: right;
+}
+
+/*질문*/
+#inputText {
+  background-color: #f7f6f6;
+  border: none;
+  font-size: 14px;
+  font-weight: 450;
+  color: #949494;
+  margin-left: 10px;
+}
+
+#reinputText {
+  background-color: #f7f6f6;
+  border: none;
+  font-size: 14px;
+  font-weight: 450;
+  color: #949494;
+  margin-left: 10px;
+}
+
+#likeBt {
+  display: inline-block;
+  background-color: #e6e4e4;
+  border-radius: 5px;
+  padding: 5px 8px;
+  font-size: 14px;
+  color: #444;
+}
+#scBt {
+  display: inline-block;
+  background-color: #e6e4e4;
+  border-radius: 5px;
+  padding: 5px 8px;
+  font-size: 14px;
+  color: #444;
+  margin: 0;
+}
+
+#reline {
+  border: 1px solid #cfcfcf;
+  background-color: #f7f6f6;
+  width: 90%;
+  margin-top: 8px;
+  display: none; /*안 보이게 설정*/
 }
 
 .by {
@@ -431,9 +541,33 @@ hr {
   .sectop {
     width: 100% !important;
   }
+}
 
-  .mainpt {
-    width: 100%;
-    height: auto;
-  }
+/*정렬
+.horiz {
+  display: flex;
+  justify-content: center;
+  margin: 18px;
+}
+.container {
+  width: 100;
+}
+*/
+
+#horiz {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  max-width: 1180px;
+  margin: 0 auto;
+  gap: 30px;
+}
+
+#container {
+  width: 790px;
+}
+
+.rbor {
+  width: 323.4px;
+  flex-shrink: 0;
 }
