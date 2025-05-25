@@ -379,7 +379,7 @@ button > div img{
 }
 .reply-section, .submit-reply{
     display: none;
-}
+}  
 .reply-input {
     flex-grow: 1;
     /* padding: 10px; */

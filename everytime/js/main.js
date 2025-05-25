@@ -6,7 +6,7 @@ document.getElementById("writeIcon").addEventListener("click",() => {
     const icon = document.getElementById("writeIcon"); 
     const writebox = document.getElementById("write"); 
     const frame = document.getElementById("postFrame");
-
+    
     form.style.visibility = "hidden";
     form.style.display = "none";
     writebox.style.background="#FFFFFF";
