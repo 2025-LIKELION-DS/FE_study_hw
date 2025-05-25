@@ -9,11 +9,10 @@
 .new_post_border {
   display: flex;
   flex-direction: column;
-  width: 780px;
-
-  border: 3px;
-  border-style: solid;
+  width: 775px;
+  border: 1px;
   border-color: rgba(0, 0, 0, 0.247);
+  border-style: solid;
 }
 .new_post_cannot {
   padding: 10px;
@@ -22,17 +21,20 @@
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
   font-size: 15px;
   height: 300px;
+  width: 755px;
+  margin-bottom: 0px;
+  outline: none;
   resize: none;
+  border-top-style: solid;
   border-top-width: 1px;
   border-top-color: rgba(0, 0, 0, 0.247);
-  border-top-style: solid;
-  border-bottom-width: 1px;
-  border-bottom-color: rgba(0, 0, 0, 0.247);
-  border-bottom-style: solid;
 }
 .newpost_add {
+  border-top: 1px solid rgba(0, 0, 0, 0.247);
+  background-color: white;
   display: flex;
   justify-content: space-between;
+  margin-top: 0;
 }
 .submit {
   background-color: red;
@@ -47,4 +49,18 @@
 #checkbox_padding {
   padding-right: 10px;
 }
-/*수정
+.warnning_in_writing {
+  width: 775px;
+  display: none;
+  border-top: 1px solid rgba(0, 0, 0, 0.247);
+}
+#warnningText {
+  color: #05bcbc;
+  font-size: 15px;
+  background-color: #edfffe;
+  display: flex;
+  width: 750px;
+  padding: 5px;
+  margin: 10px;
+  border-radius: 10px;
+}

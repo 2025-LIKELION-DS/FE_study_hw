@@ -3,8 +3,6 @@
   justify-content: center;
 }
 .secret_post_border {
-  width: 780px;
-
   border-color: rgb(0, 0, 0, 0.247);
   border-style: solid;
   border-width: 1px;
@@ -47,7 +45,16 @@
   border-top-style: solid;
   border-top-color: gainsboro;
 }
-
+.comment_box > input {
+  width: 400px;
+  background-color: none;
+  color: black;
+  background-color: none;
+}
+.plus_text {
+  border-top: 1px solid rgb(0, 0, 0, 0.247);
+  padding: 15px;
+}
 .button_detail {
   text-align: center;
   padding: 10px;
@@ -60,6 +67,10 @@
   background-color: rgba(220, 220, 220, 0.195);
 }
 .submit_button {
+  background-color: red;
+  border-color: red;
+}
+.plus_submit_button {
   background-color: red;
   border-color: red;
 }
@@ -95,20 +106,49 @@
   padding-top: 5px;
   padding-right: 5px;
 }
-.letter {
+.letter > span {
   padding-left: 10px;
   color: gray;
+}
+#write_timing {
+  color: gray;
+  font-size: 12px;
+  padding-top: 5px;
+}
+#double_text {
+  display: none;
+  margin-left: 20px;
+  margin-top: 5px;
+  border-top: 1px solid rgb(0, 0, 0, 0.247);
+}
+.double_plus_text {
+  border: 1px solid rgb(0, 0, 0, 0.247);
+  padding: 10px;
+  background-color: rgba(220, 220, 220, 0.13);
+  margin-left: 20px;
+  margin-top: 10px;
+}
+.react_text {
+  display: flex;
+  flex-direction: column;
+  font-size: 15px;
+}
+#pro_img_plus {
+  border-radius: 10px;
+  width: 40px;
+  height: 40px;
+}
+#plus_text_b {
+  padding-top: 5px;
 }
 .post_content {
   margin-bottom: 10px;
 }
 #reaction {
-  margin-bottom: 10px;
   display: flex;
+  margin-bottom: 10px;
 }
-#reaction > img {
-  padding-top: 5px;
-}
+
 #reaction > span {
   padding-left: 2px;
   padding-right: 10px;
@@ -273,4 +313,10 @@
   section.width {
     padding: 0px;
   }
+}
+.react_img {
+  width: 15px;
+  height: 15px;
+  padding-top: 4px;
+  padding-right: 1px;
 }

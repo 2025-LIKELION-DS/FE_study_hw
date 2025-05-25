@@ -438,7 +438,6 @@
 }
 .Question_add_button {
   display: flex;
-  background-color: #f9f9f9;
   justify-content: space-between;
 }
 .next_text {

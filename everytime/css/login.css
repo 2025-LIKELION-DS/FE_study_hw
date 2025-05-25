@@ -88,3 +88,6 @@
     white-space: nowrap;
   }
 }
+#bolder {
+  color: rgb(0, 0, 0);
+}

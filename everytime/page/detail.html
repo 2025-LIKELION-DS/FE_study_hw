@@ -227,27 +227,25 @@
                 </div>
 
                 <div id="reaction">
-                  <img
+                  <img class="react_img"
                     src="../img/container.articles.vote.png"
                     alt="좋아요"
-                    width="15px"
-                    height="15px"
+                   
                   /><span class="textcolor_red">12</span>
-                  <img
+                  <img class="react_img"
                     src="../img/container.articles.comment.png"
                     alt="댓글"
-                    width="15px"
-                    height="15px"
+                   
                   /><span class="textcolor_blue">0</span>
                   <img
+                  class="react_img"
                     src="../img/container.articles.scrap.png"
                     alt="스크랩"
-                    width="15px"
-                    height="15px"
+                   
                   /><span class="textcolor_yellow">6</span>
                 </div>
                 <div>
-                  <button class="button_detail">
+                  <button class="button_detail" id="button_detail1">
                     <img
                       src="../img/container.articles.buttons.posvote.png"
                       alt="공감"
@@ -256,20 +254,131 @@
                     />
                     <span>공감</span>
                   </button>
-                  <button class="button_detail">
+                  <button class="button_detail" id="button_detail2">
                     <img
+                    id="starimg"
                       src="../img/container.articles.buttons.scrap.png"
                       alt="스크랩"
                       width="15px"
                       height="15px"
                     />
-                    <span>스크랩</span>
+                    <span id="scrap_text">스크랩</span>
                   </button>
                 </div>
               </div>
             </div>
-          </div>
+
+            <div class="plus_text">
+              <div class="profile_title">
+                <img
+                  id="pro_img_plus"
+                  src="../img/anonymous.profile.png"
+                  alt="프로필"
+                />
+
+                <div class="post_title_header">
+                  <div class="profile_name">
+                    <b id="plus_text_b">익명1</b>
+                  </div>
+
+                  <div class="letter">
+                    <span>대댓글</span>
+                    <span>공감</span>
+                    <span>쪽지</span>
+                    <span>신고</span>
+
+                  </div>
+                </div>
+
+
+              </div>
+              <div class="react_text">
+                <span>다들 파이팅!</span>
+<span id="write_timing">3분 전</span>
+              </div>
+
+              <div class="double_plus_text">
+                <div class="profile_title">
+                  <img
+                    id="pro_img_plus"
+                    src="../img/anonymous.profile.png"
+                    alt="프로필"
+                  />
+                <div class="post_title_header">
+                  <div class="profile_name">
+                    <b id="plus_text_b">익명2</b>
+                  </div>
+            
+                  <div class="letter">
+                    <span>대댓글</span>
+                    <span>공감</span>
+                    <span>쪽지</span>
+                    <span>신고</span>
+                  </div>
+                </div>
+                
+              </div>
+              <div class="react_text">
+                <span>파이팅하고 이번주 스터디때 보자!</span>
+                <span id="write_timing">2분 전</span>
+              </div>
+            </div>
+            <div id="double_text">
+            <div class="comment_box">
+              <input class="d" type="text" placeholder="대댓글을 입력하세요." />
+  
+              <div>
+                <div class="check">
+                  <div id="checkbox_padding">
+                    <input type="checkbox" title="익명" />
+                    <span id="checktext">익명</span>
+                  </div>
+  
+                  <button class="plus_submit_button">
+                    <img
+                      src="../img/container.articles.write.submit.png"
+                      alt="제출"
+                      width="30px"
+                      height="100%"
+                    />
+                  </button>
+                </div>
+              </div></div>
+           </div></div>
+            <div class="plus_text">
+              <div class="profile_title">
+                <img
+                  id="pro_img_plus"
+                  src="../img/anonymous.profile.png"
+                  alt="프로필"
+                />
+
+                <div class="post_title_header">
+                  <div class="profile_name">
+                    <b id="plus_text_b">익명3</b>
+                  </div>
+
+                  <div class="letter">
+                    <span>대댓글</span>
+                    <span>공감</span>
+                    <span>쪽지</span>
+                    <span>신고</span>
+
+                  </div>
+                </div>
+
+
+              </div>
+              <div class="react_text">
+                <span>더 열심히 해야지...</span>
+<span id="write_timing">방금</span>
+              </div>
+
+
+
         </section>
+
+
         <div id="gray">
           <div class="comment_box">
             <input class="d" type="text" placeholder="댓글을 입력하세요." />
@@ -292,6 +401,12 @@
               </div>
             </div>
           </div>
+
+
+
+
+
+
 
           <button class="list_button">
             <img
@@ -466,5 +581,6 @@
     </div>
  
     </div>
+    <script src="../js/detail.js"></script>
   </body>
 </html>
