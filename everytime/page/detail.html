@@ -7,6 +7,7 @@
     <link rel ="stylesheet" href= "../css/detail.css" />
 </head>
 <body>
+    <script src="../js/detail.js"></script>
     <header class = "title">
         <div class = "M">
             <div class ="logo"></div>
@@ -93,8 +94,8 @@
                 <div class="noncon">
                     <div class="nonconimg"></div>
                     <div class="noncond">
-                    <div class="noncont">익명</div>
-                    <div class="noncons">02/06 12:10</div>
+                        <div class="noncont">익명</div>
+                        <div class="noncons">02/06 12:10</div>
                     </div>
                     <div class="noncon-side">
                     <div class="noncon-side1">쪽지</div>
@@ -149,7 +150,7 @@
                     <div class = "likeimg"></div>
                     <div class = "likenum">12</div>
                     <div class = "chatimg"></div>
-                    <div class = "chatnum">0</div>
+                    <div class = "chatnum">1</div>
                     <div class = "starimg"></div>
                     <div class = "starnum">6</div>
                 </div>
@@ -164,17 +165,50 @@
                     </div>
                 </div>
                 <div class ="cwrite">
-                    <div class = "cwrite-c">
-                        <textarea class = "cwrite-c" placeholder="댓글을 입력하세요"></textarea>
-                    </div>
-                    <div class = "cwfr">
-                        <div class = "cc">
-                            <input type="checkbox" id="anonym">
-                            <label class="anonym">익명</label>
+                        <div class = "cwrite-c">
+                            <textarea class = "cwrite-c" placeholder="댓글을 입력하세요"></textarea>
                         </div>
-                        <div class = "pen"></div>
-                    </div>
+                        <div class = "cwfr">
+                            <div class = "cc">
+                                <input type="checkbox" id="anonym-comment-1" class="anonym-check">
+                                <label for="anonym-comment-1" class="anonym-coment">익명</label>
+                            </div>
+                            <div class = "pen"></div>
+                        </div>
                 </div>
+            <div class = "ttext">
+                <div class="noncon " style="border: 1px solid #ddd; height: 100px; display: block;">
+                    <div class ="comentbox">
+                    <div class="nonconimg1" style = " margin-bottom: 50px ;"></div>
+                        
+                        <div class="noncond">
+                            <div class="noncont" style = "margin-top: 5px">익명</div>
+                            <div class="noncons" style="font-size: 16px; color: black; margin-bottom: 5px;">덕성 멋사가 그렇게 멋지다며?🦁</div>
+                            <div class="noncons">02/06 12:10</div>
+                        </div>
+                        <div class="noncon-side" style = " margin-bottom: 50px ;">
+                            <div class="noncon-side1">대댓글</div>
+                            <div class="noncon-side1">공감</div>
+                            <div class="noncon-side1">쪽지</div>
+                            <div class="noncon-side2">신고</div>
+                        </div>
+                    </div>
+                    <div class ="cwrite-coment">
+                        <div class = "cwrite-c-coment">
+                            <textarea class = "cwrite-c-coment" placeholder="댓글을 입력하세요"></textarea>
+                        </div>
+                        <div class = "cwfr-coment">
+                            <div class = "cc-coment">
+                                <input type="checkbox" id="anonym-comment-2" class="anonym-check">
+                                <label for="anonym-comment-2" class="anonym-coment">익명</label>
+
+                            </div>
+                            <div class = "pen"></div>
+                        </div>
+                        
+                </div>
+                </div>
+            </div>
             <div class = "plus">
                 <div class = "plusimg"></div>
                 <div class = "plust">글 목록</div>
