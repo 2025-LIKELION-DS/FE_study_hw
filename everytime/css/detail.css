@@ -1,17 +1,32 @@
 header {
   margin: 0;
-  padding-top: 15px;
-  padding-bottom: 15px;
-  padding-left: 150px;
+  padding: 15px 1000px;
   z-index: 5;
   position: fixed;
   background-color: white;
   height: 30px;
-  width: 2000px;
   border-bottom: 1px solid silver;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
 }
-body {
-  margin: 0px;
+.headercontainer {
+  width: 100%;
+  display: flex;
+  display: flex;
+  justify-content: center;
+}
+body,
+html {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  min-width: 320px;
+}
+.container {
+  display: flex;
+  max-width: 900px;
+  box-sizing: border-box;
 }
 hr {
   margin: 0px;
@@ -23,12 +38,7 @@ hr {
   display: flex;
   align-items: center;
   margin-right: 180px;
-  margin-left: 50px;
-}
-.header {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
+  margin-left: 60px;
 }
 .header_nav-links {
   display: flex;
@@ -93,9 +103,8 @@ ul {
 .main-text {
   font-size: 20px;
 }
-.nav {
+nav {
   display: flex;
-  background-color: rgba(244, 244, 244, 0.999);
   justify-content: center;
   margin-top: 50px;
 }
@@ -152,11 +161,13 @@ a {
   height: auto;
   display: flex;
   justify-content: space-between;
+  background-color: rgba(244, 244, 244, 0.999);
+  padding-right: 1000px;
+  padding-left: 1000px;
 }
 
 .secret {
   height: 70px;
-  width: 760px;
   border: 1px solid silver;
   font-weight: bold;
   display: flex;
@@ -165,16 +176,26 @@ a {
   cursor: pointer;
   padding-left: 15px;
   margin-bottom: 5px;
+  width: 780px;
+  /*width: 100%;
+  box-sizing: border-box;
+  max-width: 900px;*/
 }
-.section {
+section {
   display: flex;
   flex-direction: column;
   margin: 15px;
-  margin-right: 560px;
+  width: 100%;
+  box-sizing: border-box;
+  padding-right: 10px;
 }
 .sec_asi {
   display: flex;
-  margin-left: 193px;
+  overflow: hidden;
+}
+.main_container {
+  display: flex;
+  justify-content: center;
 }
 .boxes {
   background-color: rgb(247, 247, 247);
@@ -244,7 +265,6 @@ a {
   height: 15px;
   padding: 2px;
   padding-left: 5px;
-  justify-content: center;
 }
 .positive_gray {
   width: 15px;
@@ -275,19 +295,18 @@ a {
 .article_title {
   font-weight: bold;
 }
-.article_text {
+._text {
   font-weight: light;
 }
 .article_reaction {
   margin-top: 5px;
   font-weight: lighter;
   display: flex;
+  align-items: center;
   color: rgb(170, 170, 170);
 }
-.aside {
-  display: flex;
-  flex-direction: column;
-  margin-left: 530px;
+aside {
+  margin-left: 15px;
 }
 .place_now {
   color: red;
@@ -297,6 +316,25 @@ a {
   font-weight: lighter;
   font-size: smaller;
   color: silver;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 10px;
+}
+#detailtext .contentbox_rightinforms {
+  font-weight: lighter;
+  font-size: smaller;
+  color: silver;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 10px;
+  margin-left: 630px;
+  margin-top: -10px;
+}
+#detailtext .commenting_rightinforms {
+  margin-left: 620px;
+  margin-top: -10px;
 }
 #hot_content_box {
   background-color: rgb(247, 247, 247);
@@ -323,23 +361,93 @@ a {
 }
 #detailtext {
   height: auto;
-  width: 753px;
+  border: 1px solid silver;
+  display: flex;
+  padding: auto;
+  padding-left: 17px;
+  width: 100%;
+  box-sizing: border-box;
+}
+.commenting {
+  height: auto;
   border: 1px solid silver;
   display: flex;
   padding: 5px;
   padding-left: 17px;
   align-items: center;
-  margin-right: -500px;
+  border-top: none;
+}
+.newcomment {
+  height: auto;
+  border: 1px solid silver;
+  display: flex;
+  padding: 5px;
+  padding-left: 17px;
+  align-items: center;
+  border-top: none;
+}
+.cocoickprofile {
+  width: 20px;
+  border-radius: 30%;
+  margin-right: 10px;
+  margin-top: -20px;
+}
+.ickname {
+  font-size: 15px;
+  font-weight: 500;
+  margin-top: -20px;
+}
+.self_ickname {
+  font-size: 15px;
+  font-weight: 500;
+  margin-top: -20px;
+  color: rgb(19, 161, 161);
+  margin-left: -5px;
+}
+.commentcontent {
+  margin-top: -30px;
+}
+.commentdates {
+  margin-top: -20px;
+  font-size: 13px;
+  color: silver;
+}
+.commenting_rightinforms {
+  font-weight: lighter;
+  font-size: smaller;
+  color: silver;
+  display: flex;
+  margin-left: 550px;
+}
+.cocommentedcoment .commenting_rightinforms {
+  margin-left: 630px;
+  margin-top: -10px;
+}
+#newco .commenting_rightinforms {
+  margin-left: 500px;
+}
+.cocommentedcoment .commentdates {
+  margin-top: -20px;
+  font-size: 13px;
+  color: silver;
+}
+.commenting_rightinforms span {
+  padding-left: 10px;
+  margin-top: -10px;
+}
+.commenting_rightinforms span:hover {
+  cursor: pointer;
+}
+.ick_container {
+  display: flex;
+  align-items: center;
+  margin-bottom: 7px;
 }
 .detail_title {
   padding: 3px;
   font-weight: 600;
   font-size: 130%;
   padding-bottom: 7px;
-}
-
-.detail_text {
-  font-weight: light;
 }
 .anonymous_profile {
   width: 45px;
@@ -349,11 +457,9 @@ a {
 .profile_container {
   display: flex;
   align-items: center;
-  margin-bottom: 7px;
 }
-.profile_container p {
-  padding-left: 605px;
-  margin-top: -20px;
+.profile_ickname {
+  display: flex;
 }
 .nickname {
   padding-bottom: 7px;
@@ -382,7 +488,7 @@ a {
   margin-right: 5px;
   font-weight: normal;
 }
-.likesbox {
+#likesbox {
   font-size: 13px;
   font-weight: 400;
   color: gray;
@@ -398,7 +504,7 @@ a {
   margin-bottom: 0;
   margin-left: 5px;
 }
-.scrapbox {
+#scrapbox {
   font-size: 13px;
   color: gray;
   font-weight: 400;
@@ -416,28 +522,50 @@ a {
 .typeacomment {
   background-color: rgb(246, 246, 246);
   height: 30px;
-  width: 755px;
   border: 1px solid silver;
   display: flex;
-  padding: 5px;
-  padding-left: 17px;
   align-items: center;
-  flex-direction: column;
   color: gray;
   border-top: none;
   font-size: smaller;
   padding: 10px;
   margin-left: 0;
   outline: none;
+  border-right: none;
+  width: 83%;
+}
+.typeacocomment {
+  background-color: rgb(246, 246, 246);
+  height: 30px;
+  border: 1px solid silver;
+  display: flex;
+  align-items: center;
+  color: gray;
+  font-size: smaller;
+  padding: 10px;
+  margin-left: 0;
+  outline: none;
+  border-right: none;
+  width: 83%;
 }
 .typeacomment img {
   background-color: red;
   width: 50px;
-  margin: -10px;
+  margin-left: 6px;
+  padding: 0;
+}
+.typeacocomment img {
+  background-color: red;
+  width: 50px;
+  height: 50px;
   margin-left: 6px;
   padding: 0;
 }
 .typeacomment img:hover {
+  cursor: pointer;
+}
+
+.typeacocomment img:hover {
   cursor: pointer;
 }
 input {
@@ -475,90 +603,83 @@ input {
   width: 25px;
   background-color: white;
   padding: 0 10px;
+  justify-content: center;
 }
 .boardname {
   font-size: 20px;
-  padding-left: 20px;
+  padding-left: 5px;
 }
 
 .ick {
   display: flex;
-  position: absolute;
-  margin-top: -35px;
   font-size: 12px;
   color: gray;
-  margin-left: 670px;
+  width: 30px;
 }
 .submit {
   background-color: red;
   width: 50px;
-  height: 51px;
   border: none;
   padding: 0;
-  position: absolute;
-  margin-left: 726px;
-  margin-top: -51.5px;
+  display: flex;
+  margin-left: 12px;
 }
-
+.submit:hover {
+  cursor: pointer;
+}
+.typeacocomment .submit {
+  background-color: red;
+  width: 50px;
+  height: 50px;
+  border: none;
+  padding: 0;
+  display: flex;
+}
+.smallscreen {
+  display: flex;
+  width: 150px;
+  float: left;
+}
 @media screen and (max-width: 640px) {
-  body {
-    overflow-x: hidden;
-  }
   header {
     padding-left: 0;
+    padding-right: 465px;
   }
   .bigscreen {
     display: none;
   }
-  .smallscreen {
-    display: flex;
-  }
-  .nav {
+  nav {
+    margin-left: -1000px;
     float: left;
   }
-  .aside {
+  aside {
     display: none;
   }
-  .section {
+  section {
     position: absolute;
     top: 280px;
-    left: 0;
-    margin-left: 0;
-  }
-  .new_post {
-    width: 610px;
+    left: -10px;
   }
   .secret {
     display: none;
   }
-  .contentbox_rightinforms {
-    margin-left: -140px;
+  .commenting_rightinforms {
+    display: none;
+  }
+  #detailtext .contentbox_rightinforms {
+    display: none;
+  }
+  .commentcontent {
+    margin-top: -15px;
+  }
+  .co_ick_container {
+    margin-bottom: 0;
   }
   .typeacomment {
-    margin-left: 0;
-    width: 640px;
-    border-right: none;
-    height: 20px;
-    position: relative;
+    width: 77.9%;
   }
-  .submit {
-    background-color: red;
-    width: 41px;
-    height: 41px;
-    border: none;
-    padding: 0;
-    position: absolute;
-    margin-left: 598px;
-    margin-top: -41px;
-  }
-  .sides {
-    background-color: rgb(246, 246, 246);
-    width: 2px;
-    height: 30px;
-  }
-  .ick {
-    margin-top: -30px;
-    margin-left: 540px;
+  .commenting {
+    padding-top: 20px;
   }
 }
 @media screen and (min-width: 641px) {
@@ -567,8 +688,54 @@ input {
   }
   .bigscreen {
     display: flex;
+    width: 1185px;
   }
-  .aside {
-    margin-left: -530px;
+  .widthsavor {
+    display: none;
   }
+}
+.ickbtn {
+  width: 100%;
+  box-sizing: border-box;
+}
+.ickbtn form {
+  display: flex;
+}
+.icksubmit {
+  display: flex;
+  background-color: rgb(246, 246, 246);
+  border-bottom: 1px solid silver;
+  padding-left: 10px;
+}
+.icksubmitco {
+  display: flex;
+  background-color: rgb(246, 246, 246);
+  border-bottom: 1px solid silver;
+  border-top: 1px solid silver;
+}
+.ickcheckbox {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#cocoments {
+  display: none;
+}
+.cocommentedcoment {
+  background-color: rgb(246, 246, 246);
+  border: 1px solid silver;
+  padding-top: 10px;
+  padding-left: 10px;
+}
+#newcoco {
+  display: none;
+}
+.recomment {
+  display: flex;
+}
+.co_ick_container {
+  margin-bottom: 30px;
+}
+#newco {
+  display: none;
 }

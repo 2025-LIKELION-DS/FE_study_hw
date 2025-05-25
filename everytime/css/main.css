@@ -1,17 +1,33 @@
 header {
   margin: 0;
-  padding-top: 15px;
-  padding-bottom: 15px;
-  padding-left: 150px;
+  padding: 15px 1000px;
   z-index: 5;
   position: fixed;
   background-color: white;
   height: 30px;
-  width: 2000px;
   border-bottom: 1px solid silver;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  overflow: hidden;
 }
-body {
-  margin: 0px;
+.headercontainer {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  background-color: white;
+}
+body,
+html {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  min-width: 320px;
+}
+.container {
+  display: flex;
+  max-width: 900px;
+  box-sizing: border-box;
 }
 hr {
   margin: 0px;
@@ -23,12 +39,7 @@ hr {
   display: flex;
   align-items: center;
   margin-right: 180px;
-  margin-left: 50px;
-}
-.header {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
+  margin-left: 60px;
 }
 .header_nav-links {
   display: flex;
@@ -93,9 +104,8 @@ ul {
 .main-text {
   font-size: 20px;
 }
-.nav {
+nav {
   display: flex;
-  background-color: rgba(244, 244, 244, 0.999);
   justify-content: center;
   margin-top: 50px;
 }
@@ -152,11 +162,22 @@ a {
   height: auto;
   display: flex;
   justify-content: space-between;
+  background-color: rgba(244, 244, 244, 0.999);
+  padding-right: 1000px;
+  padding-left: 1000px;
+}
+
+section {
+  display: flex;
+  flex-direction: column;
+  margin: 15px;
+  width: 100%;
+  box-sizing: border-box;
+  padding-right: 10px;
 }
 
 .secret {
   height: 70px;
-  width: 760px;
   border: 1px solid silver;
   font-weight: bold;
   display: flex;
@@ -166,17 +187,16 @@ a {
   padding-left: 15px;
   margin-bottom: 5px;
 }
-.section {
-  display: flex;
-  flex-direction: column;
-  margin: 15px;
-}
 .miniicons {
   width: 25px;
   height: 25px;
   padding: 10px;
 }
 .sec_asi {
+  display: flex;
+  overflow: hidden;
+}
+.main_container {
   display: flex;
   justify-content: center;
 }
@@ -243,26 +263,26 @@ a {
 .contentbox_text {
   color: gray;
 }
-.new_post {
+#post {
+  display: none;
+}
+#new_post {
   padding-left: 10px;
   height: 50px;
-  width: 765px;
   margin-bottom: 6px;
-  border: 1px solid silver;
+  border: 2px solid silver;
   background-color: rgb(244, 244, 244);
   color: rgb(167, 167, 167);
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
+  width: 100%;
+  box-sizing: border-box;
 }
-.new_post:hover {
-  cursor: text;
-}
-.pen_icon {
+#pen_icon {
   width: 40px;
   height: 40px;
-  cursor: text;
 }
 .que_hot {
   height: 120px;
@@ -334,7 +354,8 @@ a {
 }
 #articles {
   height: 100px;
-  width: 600px;
+  width: 100%;
+  max-width: 900px;
   border: 1px solid silver;
   display: flex;
   padding: 10px;
@@ -342,6 +363,7 @@ a {
   align-items: center;
   border-bottom: none;
   overflow: hidden;
+  box-sizing: border-box;
 }
 #articles:hover {
   background-color: rgb(249, 249, 249);
@@ -362,9 +384,10 @@ a {
   margin-top: 5px;
   font-weight: lighter;
   display: flex;
+  align-items: center;
   color: rgb(170, 170, 170);
 }
-.aside {
+aside {
   margin-left: 15px;
 }
 .place_now {
@@ -406,9 +429,6 @@ a {
   padding-left: 5px;
   justify-content: center;
 }
-.new {
-  padding-right: 570px;
-}
 .new.hover {
   cursor: text;
 }
@@ -419,7 +439,12 @@ a {
 }
 .boardname {
   font-size: 20px;
-  padding-left: 20px;
+  padding-left: 5px;
+}
+.smallscreen {
+  display: flex;
+  width: 150px;
+  float: left;
 }
 @media screen and (max-width: 640px) {
   .bigscreen {
@@ -427,30 +452,27 @@ a {
   }
   header {
     padding-left: 0;
+    padding-right: 465px;
   }
   .smallscreen {
     display: flex;
+    justify-content: center;
+    align-items: center;
   }
-  .nav {
+  nav {
+    margin-left: -1000px;
     float: left;
   }
-  .aside {
+  aside {
     display: none;
   }
-  .section {
+  section {
     position: absolute;
     top: 280px;
-    left: -15px;
-  }
-  .new_post {
-    width: 617px;
+    left: -10px;
   }
   .secret {
     display: none;
-  }
-
-  .new {
-    padding-right: 430px;
   }
 }
 @media screen and (min-width: 641px) {
@@ -459,5 +481,6 @@ a {
   }
   .bigscreen {
     display: flex;
+    width: 1185px;
   }
 }
