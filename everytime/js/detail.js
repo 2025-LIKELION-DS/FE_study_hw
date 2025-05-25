@@ -3,7 +3,7 @@ function plus_one(a) {
 }
 function minus_one(a) {
     return a - 1;
-}
+} 
 //좋아요
 document.querySelector(".like").addEventListener("click", () => {
     const likes = document.querySelector(".mini-likenum");
