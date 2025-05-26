@@ -34,19 +34,27 @@ scrapButton.addEventListener("click", () => {
 document.querySelector(".answer").addEventListener("click", () => {
     const replySection = document.querySelector(".reply-section");
     const submitBtn = document.querySelector(".submit-reply");
-
+    
     replySection.style.display = "block";
     submitBtn.style.display = "block";
 });
+//대댓글 단 입력창
+document.querySelector(".submit-reply").addEventListener("click", (e) => {
+    e.preventDefault();
 
-document.querySelector(".submit-reply").addEventListener("click", () => {
     const input = document.querySelector(".reply-input");
+    const texts = document.querySelector(".reply-text");
     const text = input.value.trim();
+    const replyContainer = document.querySelector('.reply-container');
+    const repliess = document.querySelector('.replies');
+
+    replyContainer.style.display = "block";
+    repliess.style.display = "block";
 
     if (text) {
-        alert(`작성한 대댓글: ${text}`);
-        input.value = ""; 
+        texts.textContent = text;        
+        input.value = "";
     } else {
-        alert("대댓글을 입력하세요!");
+        alert("대댓글을 입력해주세요.");
     }
 });
